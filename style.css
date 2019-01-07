@@ -1,0 +1,386 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+#nav-bar
+{
+	top: 0;
+}
+
+
+.navbar-nav li
+{
+	padding: 0 10px;
+}
+
+.navbar-nav li a
+{
+	text-align: left;
+}
+
+#nav-bar ul li a:hover
+{
+	color: #007bff!important;
+}
+
+.navbar
+{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0,0,0,0.8)), url(img/rainwindow.jpg);
+	background-size: cover;
+	background-position: center;
+	color: #efefef !important;
+	background-attachment: fixed;
+	width: 100%;
+	padding: 15px 0px;
+}
+
+.navbar-toggler
+{
+	border: none!important;
+}
+
+.nav-link
+{
+	color: #fff!important;
+	font-weight: 300;
+	font-size: 18px;
+}
+
+#resume
+{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0,0,0,0.8)), url(img/rainwindow.jpg);
+	background-size: cover;
+	background-position: center;
+	color: #efefef !important;
+	background-attachment: fixed;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+#resume h1
+{
+	text-align: center;
+	color: #efefef !important;
+	padding-bottom: 10px;
+}
+
+#resume h1::after
+{
+	content: '';
+	background: #efefef;
+	display: block;
+	height: 3px;
+	width: 170px;
+	margin: 20px auto 5px;
+}
+
+.resume
+{
+	margin-top: 40px;
+}
+
+#about
+{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	color: #555;
+}
+
+.tank
+{
+	width: 50%;
+	margin: auto;
+}
+
+.experience {
+	padding: 30 0px;
+}
+
+.about h1
+{
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+.yeah {
+	display: inline-block;
+	width: 30%;
+}
+
+.location {
+	width: 80%;
+	margin: auto;
+}
+
+.beah {
+	display: inline-block;
+	width: 70%;
+}
+
+.experience-line {
+	min-width: 650px;
+}
+
+.date-item {
+	width: 36px;
+	height: 36px;
+	text-align: center;
+	line-height: 36px;
+	border-radius: 50%;
+	background: lightblue;
+	margin: 0 4px;
+	display: inline-block;
+	color: white;
+	position: relative;
+	transition: all 0.2s ease-in-out;
+}
+
+.date-item p {
+	font-size: 12px;
+}
+
+.date-item:hover {
+	transform: scale(1.1);
+}
+
+.date-item::before{
+	content: '';
+	position: absolute;
+	top: 16px;
+	left: -16px;
+	width: 16px;
+	height: 3.2px;
+	background: lightblue;
+	z-index: -1;
+}
+
+
+.date-item:first-child::before {
+	display: none;
+}
+
+.active {
+	background: dodgerblue;
+	z-index: 100;
+}
+
+.active::before {
+	background: dodgerblue;
+}
+
+.date_start::before {
+	background: lightblue;
+}
+
+.year {
+	background: dodgerblue;
+	border-radius: 0%;
+}
+
+.year::after {
+	display: none;
+}
+
+.start::before {
+	display: none;
+}
+
+
+.logo {
+	width: 50%;
+	margin: auto;
+	transform-style: preserve-3d;
+	transition: all 0.8s ease;
+	perspective: 100px;
+}
+
+.logo:hover {
+	transform: rotateX(180deg);
+}
+
+.logo img {
+	width: 100%;
+	margin: auto;
+	height: auto;
+	border-radius: 8px;
+}
+
+.front {
+	position: absolute;
+	top: 0;
+	left: 0;
+	backface-visibility: hidden;
+	overflow: hidden;
+	z-index: 2;
+}
+
+.back img {
+	transform: scaleY(-1);
+}
+
+@media screen and (max-width: 800px) {
+	.tank
+	{
+		width: 80%;
+		margin: auto;
+	}
+
+	.yeah, .beah {
+		width: 100%;
+		margin: auto;
+		padding: 10 0px;
+	}
+
+	.logo {
+		width: 25%;
+	}
+
+	.logo img {
+		width: 100%;
+		height: auto;
+		border-radius: 8px;
+	}
+}
+
+#hobbies
+{
+	position: relative;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0,0,0,0.8)), url(img/rainwindow.jpg);
+	background-size: cover;
+	background-position: center;
+	color: #efefef !important;
+	background-attachment: fixed;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+#hobbies h1
+{
+	text-align: center;
+	color: #efefef !important;
+	padding-bottom: 10px;
+}
+
+#hobbies h1::after
+{
+	content: '';
+	background: #efefef;
+	display: block;
+	height: 3px;
+	width: 170px;
+	margin: 20px auto 5px;
+}
+
+.hobbies
+{
+	margin-top: 40px;
+}
+
+.icon
+{
+	font-size: 40px;
+	margin: 20px auto;
+	padding: 20px;
+	height: 80px;
+	width: 80px;
+	border: 1px solid #fff;
+	border-radius: 50%;
+}
+
+#hobbies p
+{
+	font-size: 14px;
+	margin-top: 20px;
+	color: #ccc;
+}
+
+.hobbies .col-md-3:hover
+{
+	background: #696969;
+	cursor: pointer;
+	transition: 0.7s;
+}
+
+#intro
+{
+	position: relative;
+	z-index: 200;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	color: #555;
+
+}
+
+.container h1
+{
+	text-align: center;
+	color: #555 !important;
+	padding-bottom: 10px;
+}
+
+h1::after
+{
+	content: '';
+	background: #000;
+	display: block;
+	height: 3px;
+	width: 170px;
+	margin: 20px auto 5px;
+}
+
+.profile-pic
+{
+	margin-top: 25px;
+}
+
+.profile-pic .img-box
+{
+	opacity: 1;
+	display: block;
+}
+
+.profile-pic .img-box img
+{
+	filter: grayscale(1);
+	height: 320px;
+	width: auto;
+}
+
+.profile-pic .img-box img:hover
+{
+	filter: grayscale(0.4);
+	cursor: pointer;
+}
+
+.profile-pic h2
+{
+	font-size: 22px;
+	font-weight: bold;
+	margin-top: 15px;
+}
+
+.profile-pic h3
+{
+	font-size: 15px;
+	font-weight: bold;
+	margin-top: 15px;
+}
+
+.description
+{
+
+}
+
+.description h3
+{
+	font-size: 20px;
+	margin-top: 80px;
+}
+
+.samples
+{
+	padding: 10px;
+}
+
