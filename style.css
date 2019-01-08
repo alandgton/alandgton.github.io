@@ -220,7 +220,7 @@
 	transform: scaleY(-1);
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1500px) {
 	.tank
 	{
 		width: 80%;
