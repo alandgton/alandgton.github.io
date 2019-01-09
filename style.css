@@ -88,12 +88,6 @@
 	color: #555;
 }
 
-.tank
-{
-	width: 50%;
-	margin: auto;
-}
-
 .experience {
 	padding: 30 0px;
 }
@@ -104,19 +98,101 @@
 	padding-bottom: 10px;
 }
 
-.yeah {
-	display: inline-block;
-	width: 30%;
-}
-
 .location {
 	width: 80%;
 	margin: auto;
 }
 
-.beah {
-	display: inline-block;
-	width: 70%;
+@media screen and (max-width: 600px) {
+	.tank
+	{
+		width: 80%;
+		margin: auto;
+	}
+
+	.yeah, .beah {
+		width: 100%;
+		margin: auto;
+		padding: 10 0px;
+	}
+
+	.logo {
+		width: 25%;
+		margin: auto;
+	}
+
+	.logo img {
+		width: 100%;
+		height: auto;
+		border-radius: 8px;
+	}
+
+	.back img {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 600px) {
+	.tank
+	{
+		width: 60%;
+		margin: auto;
+	}
+
+	.yeah, .beah {
+		width: 100%;
+		margin: auto;
+		padding: 10 0px;
+	}
+
+	.logo {
+		width: 25%;
+		margin: auto;
+	}
+
+	.logo img {
+		width: 100%;
+		height: auto;
+		border-radius: 8px;
+	}
+
+	.back img {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+
+	.tank {
+		width: 50%;
+		margin: auto;
+	}
+
+	.yeah {
+		display: inline-block;
+		width: 30%;
+	}
+
+	.beah {
+		display: inline-block;
+		width: 70%;
+	}
+
+	.logo {
+		width: 50%;
+		margin: auto;
+		transform-style: preserve-3d;
+		transition: all 0.8s ease;
+		perspective: 100px;
+	}
+
+	.logo img {
+		width: 100%;
+		margin: auto;
+		height: auto;
+		border-radius: 8px;
+	}
+
 }
 
 .experience-line {
@@ -185,63 +261,6 @@
 
 .start::before {
 	display: none;
-}
-
-
-.logo {
-	width: 50%;
-	margin: auto;
-	transform-style: preserve-3d;
-	transition: all 0.8s ease;
-	perspective: 100px;
-}
-
-.logo:hover {
-	transform: rotateX(180deg);
-}
-
-.logo img {
-	width: 100%;
-	margin: auto;
-	height: auto;
-	border-radius: 8px;
-}
-
-.front {
-	position: absolute;
-	top: 0;
-	left: 0;
-	backface-visibility: hidden;
-	overflow: hidden;
-	z-index: 2;
-}
-
-.back img {
-	transform: scaleY(-1);
-}
-
-@media screen and (max-width: 1500px) {
-	.tank
-	{
-		width: 80%;
-		margin: auto;
-	}
-
-	.yeah, .beah {
-		width: 100%;
-		margin: auto;
-		padding: 10 0px;
-	}
-
-	.logo {
-		width: 25%;
-	}
-
-	.logo img {
-		width: 100%;
-		height: auto;
-		border-radius: 8px;
-	}
 }
 
 #hobbies
