@@ -4,70 +4,80 @@
 	padding: 0;
 }
 
-#nav-bar
-{
-	top: 0;
+@keyframes fade-in {
+	from { opacity: 0}
+	to	{ opacity: 1}
 }
 
-
-.navbar-nav li
-{
-	padding: 0 10px;
-}
-
-.navbar-nav li a
-{
-	text-align: left;
-}
-
-#nav-bar ul li a:hover
-{
-	color: #007bff!important;
-}
-
-.navbar
-{
-	background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0,0,0,0.8)), url(img/rainwindow.jpg);
-	background-size: cover;
-	background-position: center;
-	color: #efefef !important;
-	background-attachment: fixed;
+#loading-screen {
+	position: relative;
+	height: 100%;
 	width: 100%;
-	padding: 15px 0px;
+	background-color: black;
+	z-index: -5;
 }
 
-.navbar-toggler
-{
-	border: none!important;
+.portrait {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -150px;
+	margin-top: -250px;
 }
 
-.nav-link
-{
-	color: #fff!important;
-	font-weight: 300;
-	font-size: 18px;
+.portrait img {
+	width: 300px;
+	height: 300px;
+	border-radius: 100%;
+	border: 8px solid white;
 }
 
-#resume
-{
-	background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0,0,0,0.8)), url(img/rainwindow.jpg);
+/* Lesson: when top: 50% is not working, create a dummy parent. */
+.portrait-holder {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 100%;
+}
+
+.portrait-caption {
+	width: 50%;
+	min-width: 450px;
+	margin: auto;
+	height: 200px;
+	position: absolute;
+	transform: translate(-50%, -20%);
+	border: 8px solid white;
+	z-index: -3;
+}
+
+.portrait-caption p {
+	padding-top: 100px;
+	text-align: center;
+	font-size: 50px;
+	color: white;
+}
+
+#school {
+	position: relative;
+	background-color: rgb(114, 107, 107);
 	background-size: cover;
 	background-position: center;
 	color: #efefef !important;
 	background-attachment: fixed;
 	padding-top: 50px;
 	padding-bottom: 50px;
+	height: 100vh;
+	width: 100vw;
 }
 
-#resume h1
-{
+#school h1 {
 	text-align: center;
 	color: #efefef !important;
 	padding-bottom: 10px;
 }
 
-#resume h1::after
-{
+#school h1::after {
 	content: '';
 	background: #efefef;
 	display: block;
@@ -76,41 +86,84 @@
 	margin: 20px auto 5px;
 }
 
-.resume
-{
-	margin-top: 40px;
+.hidden {
+	opacity: 0;
 }
 
-#about
-{
+.fade-in-element {
+	animation: fade-in 2s;
+}
+
+#work {
 	padding-top: 50px;
 	padding-bottom: 50px;
 	color: #555;
+}
+
+#work h1::after {
+	content: '';
+	background: #555;
+	display: block;
+	height: 3px;
+	width: 170px;
+	margin: 20px auto 5px;
+}
+
+.experience-wrapper {
+}
+
+.testing {
 }
 
 .experience {
 	padding: 30 0px;
 }
 
-.about h1
-{
+.work h1 {
 	text-align: center;
 	padding-bottom: 10px;
 }
 
-.location {
+.work-label {
 	width: 80%;
 	margin: auto;
 }
 
+.work-place {
+	padding-top: 3px;
+	text-align: center;
+}
+
+.work-location {
+	width: 100%;
+	margin: auto;
+	text-align: center;
+}
+
+.octicon-location {
+	padding-bottom: 3px;
+	transform: scale(1.4);
+}
+
+.octicon-label {
+	padding-left: 4px;
+	font-weight: 500;
+	font-size: 18px;
+	letter-spacing: -1px;
+}
+
 @media screen and (max-width: 600px) {
-	.tank
-	{
+	.school-container {
 		width: 80%;
 		margin: auto;
 	}
 
-	.yeah, .beah {
+	.work-container {
+		width: 80%;
+		margin: auto;
+	}
+
+	.work-left, .work-right {
 		width: 100%;
 		margin: auto;
 		padding: 10 0px;
@@ -125,21 +178,27 @@
 		width: 100%;
 		height: auto;
 		border-radius: 8px;
-	}
-
-	.back img {
-		display: none;
 	}
 }
 
 @media screen and (min-width: 600px) {
-	.tank
-	{
+	.school-container {
 		width: 60%;
 		margin: auto;
 	}
 
-	.yeah, .beah {
+	.berkeley-experience {
+		width: 90%;
+		margin: auto;
+		text-align: center;
+	}
+
+	.work-container {
+		width: 60%;
+		margin: auto;
+	}
+
+	.work-left, .work-right {
 		width: 100%;
 		margin: auto;
 		padding: 10 0px;
@@ -154,26 +213,40 @@
 		width: 100%;
 		height: auto;
 		border-radius: 8px;
-	}
-
-	.back img {
-		display: none;
 	}
 }
 
 @media screen and (min-width: 1200px) {
 
-	.tank {
+	.school-container {
+		width: 100%;
+		margin: auto;
+	}
+
+	.berkeley-experience {
+		width: 60%;
+		margin: auto;
+		text-align: center;
+		padding: 20px;
+	}
+
+	.berkeley-experience p {
+		line-height: 1.5;
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	.work-container {
 		width: 50%;
 		margin: auto;
 	}
 
-	.yeah {
+	.work-left {
 		display: inline-block;
 		width: 30%;
 	}
 
-	.beah {
+	.work-right {
 		display: inline-block;
 		width: 70%;
 	}
@@ -192,10 +265,9 @@
 		height: auto;
 		border-radius: 8px;
 	}
-
 }
 
-.experience-line {
+.work-timeline {
 	min-width: 650px;
 }
 
@@ -246,7 +318,7 @@
 	background: dodgerblue;
 }
 
-.date_start::before {
+.start-date::before {
 	background: lightblue;
 }
 
@@ -322,84 +394,277 @@
 	transition: 0.7s;
 }
 
-#intro
-{
-	position: relative;
-	z-index: 200;
-	padding-top: 50px;
-	padding-bottom: 50px;
-	color: #555;
-
+.wrapper {
+	/*margin: 0 auto 100px auto;
+	max-width: 960px;*/
 }
 
-.container h1
-{
-	text-align: center;
-	color: #555 !important;
-	padding-bottom: 10px;
+.stage {
+	list-style: none;
+	padding: 0;
 }
 
-h1::after
-{
+/*************************************
+Build the scene and rotate on hover
+**************************************/
+
+.club-block {
+	width: 400px;
+	height: 400px;
+	margin: 30px;
+	float: left;
+	-webkit-perspective: 1000px;
+	-moz-perspective: 1000px;
+	perspective: 1000px;
+}
+
+.club {
+	width: 400px;
+	height: 400px;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transform: translateZ(-200px);
+	-moz-transform: translateZ(-200px);
+	transform: translateZ(-200px);
+	-webkit-transition: -webkit-transform 350ms;
+	-moz-transition: -moz-transform 350ms;
+	transition: transform 350ms;
+}
+
+.club:hover, .club:active {
+	-webkit-transform: rotateY(-78deg) translateZ(20px);
+	-moz-transform: rotateY(-78deg) translateZ(20px);
+	transform: rotateY(-78deg) translateZ(20px);
+}
+
+/*************************************
+Transform and style the two planes
+**************************************/
+
+.club .club-logo, 
+.club .info {
+	position: absolute;
+	width: 400px;
+	height: 400px;
+	background-color: #fff;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.club .club-logo {
+	-webkit-transform: translateZ(200px);
+	-moz-transform: translateZ(200px);
+	transform: translateZ(200px);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.club .info {
+	-webkit-transform: rotateY(90deg) translateZ(200px);
+	-moz-transform: rotateY(90deg) translateZ(200px);
+	transform: rotateY(90deg) translateZ(200px);
+	border: 1px solid #B8B5B5;
+	font-size: 0.75em;
+}
+
+.tutor-info {
+	background-color: dodgerblue!important;
+}
+
+.anova-info {
+	background-color: #248487!important;
+}
+
+.csm-info {
+	background-color: #008000!important;
+}
+/*************************************
+Shadow beneath the 3D object
+**************************************/
+
+.csstransforms3d .club::after {
 	content: '';
-	background: #000;
-	display: block;
-	height: 3px;
-	width: 170px;
-	margin: 20px auto 5px;
+	width: 400px;
+	height: 400px;
+	position: absolute;
+	bottom: 0;
+	box-shadow: 0 30px 50px rgba(0,0,0,0.3);
+	-webkit-transform-origin: 100% 100%;
+	-moz-transform-origin: 100% 100%;
+	transform-origin: 100% 100%;
+	-webkit-transform: rotateX(90deg) translateY(200px);
+	-moz-transform: rotateX(90deg) translateY(200px);
+	transform: rotateX(90deg) translateY(200px);
+	-webkit-transition: box-shadow 350ms;
+	-moz-transition: box-shadow 350ms;
+	transition: box-shadow 350ms;
 }
 
-.profile-pic
-{
-	margin-top: 25px;
+.csstransforms3d .club:hover::after {
+	box-shadow: 20px -5px 50px rgba(0,0,0,0.3);
 }
 
-.profile-pic .img-box
-{
-	opacity: 1;
-	display: block;
-}
+/*************************************
+Movie information
+**************************************/
 
-.profile-pic .img-box img
-{
-	filter: grayscale(1);
-	height: 320px;
-	width: auto;
-}
-
-.profile-pic .img-box img:hover
-{
-	filter: grayscale(0.4);
-	cursor: pointer;
-}
-
-.profile-pic h2
-{
-	font-size: 22px;
+.info header {
+	color: #FFF;
+	padding: 7px 10px;
 	font-weight: bold;
-	margin-top: 15px;
+	height: 195px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	text-shadow: 0px 1px 1px rgba(0,0,0,1);
 }
 
-.profile-pic h3
-{
-	font-size: 15px;
-	font-weight: bold;
-	margin-top: 15px;
+.info header h1 {
+	margin: 0 0 2px;
+	font-size: 1.4em;
 }
 
-.description
-{
+.info header .rating {
+	border: 1px solid #FFF;
+	padding: 0px 3px;
+}
+
+.info p {
+	padding: 1.2em 1.4em;
+	margin: 2px 0 0;
+	font-weight: 700;
+	color: #666;
+	line-height: 1.4em;
+	border-top: 10px solid #555;
+}
+
+/*************************************
+Generate "lighting" using box shadows
+**************************************/
+
+.club .club-logo,
+.club .info,
+.club .info header {
+	-webkit-transition: box-shadow 350ms;
+	-moz-transition: box-shadow 350ms;
+	transition: box-shadow 350ms;
+}
+
+.csstransforms3d .club .club-logo {
+	box-shadow: inset 0px 0px 40px rgba(255,255,255,0);
+}
+
+.csstransforms3d .club:hover .club-logo {
+	box-shadow: inset 300px 0px 40px rgba(255,255,255,0.8);
+}
+
+.csstransforms3d .club .info, 
+.csstransforms3d .club .info header {
+	box-shadow: inset -300px 0px 40px rgba(0,0,0,0.5);
+}
+
+.csstransforms3d .club:hover .info, 
+.csstransforms3d .club:hover .info header {
+	box-shadow: inset 0px 0px 40px rgba(0,0,0,0);
+}
+
+/*************************************
+Posters and still images
+**************************************/
+
+.club-block:nth-child(1) .club .club-logo {
+  background-image: url(img/berkeng.jpg);
+}
+
+.club-block:nth-child(2) .club-logo {
+  background-image: url(img/anova2.jpg);
+}
+
+.club-block:nth-child(3) .club-logo {
+  background-image: url(img/csm.png);
+}
+
+/*************************************
+Fallback
+**************************************/
+.no-csstransforms3d .club .club-logo, 
+.no-csstransforms3d .club .info {
+	position: relative;
+}
+
+/*************************************
+Media Queries
+**************************************/
+
+@media screen and (max-width: 1150px) {
+	#school {
+		height: 2000px!important;
+	}
+
+	.tutor {
+		position: absolute;
+		top: 20%;
+		left: 50%!important;
+		margin-left: -200px;
+	}
+
+	.anova {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-top: -100px;
+		margin-left: -200px;
+	}
+
+	.csm {
+		position: absolute;
+		bottom: 1%;
+		left: 50%;
+		margin-left: -200px;
+	}
 
 }
 
-.description h3
-{
-	font-size: 20px;
-	margin-top: 80px;
+@media screen and (max-width: 1550px) {
+	#school {
+		height: 160vh;
+	}
+
+	.tutor {
+		position: absolute;
+		left: 10%;
+	}
+
+	.anova {
+		position: absolute;
+		right: 10%;
+	}
+
+	.csm {
+		position: absolute;
+		bottom: 10%;
+		left: 50%;
+		margin-left: -200px;
+	}
+
 }
 
-.samples
-{
-	padding: 10px;
-}
+@media screen and (min-width: 1550px) {
+	.tutor {
+		position: absolute;
+		left: 5%;
+	}
 
+	.anova {
+		position: absolute;
+		right: 5%;
+	}
+
+	.csm {
+		position: absolute;
+		left: 50%;
+		margin-left: -200px;
+	}
+
+}

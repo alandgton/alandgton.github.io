@@ -31,184 +31,209 @@
 </head>
 
 <body>
-<!--- Navigation Bar -->
-<section id="nav-bar">
-	<nav class="navbar navbar-expand-lg navbar-light">
-	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-	    <span class="navbar-toggler-icon"></span>
-	  </button>
-	  <div class="collapse navbar-collapse" id="navbarNav">
-	    <ul class="navbar-nav ml-auto">
-	      <li class="nav-item">
-	        <a class="nav-link" href="#top">HOME</a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="#resume">ABOUT</a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="#hobbies">INTERESTS</a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="#music">MUSIC</a>
-	      </li>
-	    </ul>
-	  </div>
-	</nav>
-</section>
-
-<!--- 3 pictures of team members -->
-<section id="intro">
-	<div class="container">
-		<h1>Hello World!</h1>
-		<div class="row">
-			<div class="col-md-4 profile-pic text-center">
-				<div class="img-box">
-					<img src="img/portrait.jpg" class="img-responsive">
-				</div>
-				<h2>Alan Ton</h2>
-				<p>"I can handle the business side"</p>
+<section id="loading-screen">
+	<div class="hidden">
+		<div class="portrait">
+			<img src="img/portrait3.jpg" class="img-responsive">
+		</div>
+		<div class="portrait-holder">
+			<div class="portrait-caption">
+				<p>Hi, I am Alan Ton</p>
 			</div>
-			<div class="col-md-8 description text-center">
-				<h3>This space is empty for now, but it will probably be filled with content relevant to my professional career, musical endeavors, interest in photography, and attempts at cooking. The lack of material in all 4 categories clearly makes it evident that I should be doing something more productive with my time.</h3>
-				<h3>Explore below to learn more about how I throw that time down the drain!</h3>
-			</div>
+		</div>
 	</div>
 </section>
 
-<section id="resume">
-	<div class="container">
+<section id="school">
+	<div class="school-container hidden">
 		<h1>Background</h1>
-		<p>I was born and raised in the suburbs of the San Gabriel Valley of Los Angeles, CA.</p>
-		<p>I'm a third year student studying Electrical Engineering & Computer Sciences at UC Berkeley. My primary interests are backend development, systems programming, and cloud computing. On the side, I enjoy teaching. I am a paid tutor at UC Berkeley College of Engineering and also do volunteer teaching work at under-resourced schools in Oakland, CA.</p>
+		<div class="berkeley-experience">
+			<p>I am currently a third year student studying Electrical Engineering and Computer Sciences at UC Berkeley with an expected graduation date of May 2020. To date, my favorite courses so far have been: CS61B (Data Structures), CS61C (Computer Architecture), CS162 (Operating Systems & Systems Programming), and EE16A (Linear Algebra & Basic Circuits).</p>
+		</div>
+		<div class="wrapper">
+			<ul class="stage clearfix">
+				<li class="club-block tutor">
+					<div class="club" onclick="return true">
+						<div class="club-logo"></div>
+						<div class="info tutor-info">
+							<header>
+								<h1>Tutor</h1>
+							</header>
+							<p>Teaching is fun.</p>
+						</div>
+					</div>
+				</li>
+				<li class="club-block anova">
+					<div class="club" onclick="return true">
+						<div class="club-logo"></div>
+						<div class="info anova-info">
+							<header>
+								<h1>Site Leader</h1>
+							</header>
+							<p>Yes, I do.</p>
+						</div>
+					</div>
+				</li>
+				<li class="club-block csm">
+					<div class="club" onclick="return true">
+						<div class="club-logo"></div>
+						<div class="info csm-info">
+							<header>
+								<h1>Coordinator</h1>
+							</header>
+							<p>Coordinate things.</p>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
 	</div>
 </section>
 
 <!--- About -->
-<section id="about">
-	<div class="tank">
-		<div class="about">
+<section id="work">
+	<div class="work-container">
+		<div class="work hidden">
 			<h1>Experience</h1>
 		</div>
-		<div class="row experience">
-			<div class="yeah">
-				<div class="row timeline-info">
-					<div class="logo">
-							<div class="front"><img src="img/facebook.png" class="img-responsive"></div>
-							<div class="back"><img src="img/instagram.png" class="img-responsive"></div>
+		<div class="experience-wrapper">
+			<div class="row experience hidden testing">
+				<div class="work-left">
+					<div class="row timeline-info">
+						<div class="logo">
+								<div class="front"><img src="img/facebook.png" class="img-responsive"></div>
+						</div>
+					</div>
+					<div class="work-label">
+						<div class="work-place">
+							<h3>Facebook</h3>
+						</div>
+						<div class="work-location">
+							<svg class="octicon octicon-location" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6 0C2.69 0 0 2.5 0 5.5 0 10.02 6 16 6 16s6-5.98 6-10.5C12 2.5 9.31 0 6 0zm0 14.55C4.14 12.52 1 8.44 1 5.5 1 3.02 3.25 1 6 1c1.34 0 2.61.48 3.56 1.36.92.86 1.44 1.97 1.44 3.14 0 2.94-3.14 7.02-5 9.05zM8 5.5c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"></path></svg>
+							<span class="octicon-label">Menlo Park, CA</span>
+						</div>
 					</div>
 				</div>
-				<div class="location">
-					<h3 style="text-align:center;">Facebook</h3>
-					<h5 style="text-align:center;">Menlo Park, CA</h5>
+				<div class="work-right">
+					<div class="work-timeline">
+						<ul>
+							<li class="date-item year"><p>2019</p></li>
+							<li class="date-item start"><p>Jan</p></li>
+							<li class="date-item"><p>Feb</p></li>
+							<li class="date-item"><p>Mar</p></li>
+							<li class="date-item"><p>Apr</p></li>
+							<li class="date-item active start-date"><p>May</p></li>
+							<li class="date-item active"><p>Jun</p></li>
+							<li class="date-item active"><p>Jul</p></li>
+							<li class="date-item active"><p>Aug</p></li>
+							<li class="date-item"><p>Sep</p></li>
+							<li class="date-item"><p>Oct</p></li>
+							<li class="date-item"><p>Nov</p></li>
+							<li class="date-item"><p>Dec</p></li>
+						</ul>
+					</div>
+					<h5 style="color:dodgerblue; font-style:italic;">Production Engineering Intern</h5>
+					<h5>I'm really excited to join Facebook as a Production Engineering Intern in Summer 2019. The position is presented as a hybrid systems-software engineering role, so I'm excited to bring what I know about systems, network, and software development to the table.</h5>
 				</div>
-			</div>
-			<div class="beah">
-				<div class="experience-line">
-					<ul>
-						<li class="date-item year"><p>2019</p></li>
-						<li class="date-item start"><p>Jan</p></li>
-						<li class="date-item"><p>Feb</p></li>
-						<li class="date-item"><p>Mar</p></li>
-						<li class="date-item"><p>Apr</p></li>
-						<li class="date-item active date_start"><p>May</p></li>
-						<li class="date-item active"><p>Jun</p></li>
-						<li class="date-item active"><p>Jul</p></li>
-						<li class="date-item active"><p>Aug</p></li>
-						<li class="date-item"><p>Sep</p></li>
-						<li class="date-item"><p>Oct</p></li>
-						<li class="date-item"><p>Nov</p></li>
-						<li class="date-item"><p>Dec</p></li>
-					</ul>
-				</div>
-				<h5 style="color:dodgerblue; font-style:italic;">Production Engineering Intern</h5>
-				<h5>I'm really excited to join Facebook as a Production Engineering Intern in Summer 2019. The position is presented as a hybrid systems-software engineering role, so I'm excited to bring what I know about systems, network, and software development to the table.</h5>
 			</div>
 		</div>
-		<div class="row experience">
-			<div class="yeah">
-				<div class="row timeline-info">
-					<div class="logo">
-						<div class="front"><img src="img/aws.jpg" class="img-responsive"></div>
-						<div class="back"><img src="img/amazon.png" class="img-responsive"></div>
+		<div class="experience-wrapper">
+			<div class="row experience hidden testing">
+				<div class="work-left">
+					<div class="row timeline-info">
+						<div class="logo">
+							<div class="front"><img src="img/aws.jpg" class="img-responsive"></div>
+						</div>
+					</div>
+					<div class="work-label">
+						<div class="work-place">
+							<h3>Amazon</h3>
+						</div>
+						<div class="work-location">
+							<svg class="octicon octicon-location" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6 0C2.69 0 0 2.5 0 5.5 0 10.02 6 16 6 16s6-5.98 6-10.5C12 2.5 9.31 0 6 0zm0 14.55C4.14 12.52 1 8.44 1 5.5 1 3.02 3.25 1 6 1c1.34 0 2.61.48 3.56 1.36.92.86 1.44 1.97 1.44 3.14 0 2.94-3.14 7.02-5 9.05zM8 5.5c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"></path></svg>
+							<span class="octicon-label">Seattle, WA</span>
+						</div>
 					</div>
 				</div>
-				<div class="location">
-					<h3 style="text-align:center;">Amazon</h3>
-					<h5 style="text-align:center;">Seattle, WA</h5>
+				<div class="work-right">
+					<div class="work-timeline">
+						<ul>
+							<li class="date-item year"><p>2018</p></li>
+							<li class="date-item start"><p>Jan</p></li>
+							<li class="date-item"><p>Feb</p></li>
+							<li class="date-item"><p>Mar</p></li>
+							<li class="date-item"><p>Apr</p></li>
+							<li class="date-item active start-date"><p>May</p></li>
+							<li class="date-item active"><p>Jun</p></li>
+							<li class="date-item active"><p>Jul</p></li>
+							<li class="date-item active"><p>Aug</p></li>
+							<li class="date-item"><p>Sep</p></li>
+							<li class="date-item"><p>Oct</p></li>
+							<li class="date-item"><p>Nov</p></li>
+							<li class="date-item"><p>Dec</p></li>
+						</ul>
+					</div>
+					<h5 style="color:dodgerblue; font-style:italic;">Software Development Engineering Intern</h5>
+					<h5>I worked on Amazon Web Services as part of the Elastic Cloud Compute (EC2) networking software team. It was really cool to be at the forefront of cloud technology. Under the tutelage of some of the best engineers in the industry, I learned so much about systems, networking, and software development.</h5>
 				</div>
-			</div>
-			<div class="beah">
-				<div class="experience-line">
-					<ul>
-						<li class="date-item year"><p>2018</p></li>
-						<li class="date-item start"><p>Jan</p></li>
-						<li class="date-item"><p>Feb</p></li>
-						<li class="date-item"><p>Mar</p></li>
-						<li class="date-item"><p>Apr</p></li>
-						<li class="date-item active date_start"><p>May</p></li>
-						<li class="date-item active"><p>Jun</p></li>
-						<li class="date-item active"><p>Jul</p></li>
-						<li class="date-item active"><p>Aug</p></li>
-						<li class="date-item"><p>Sep</p></li>
-						<li class="date-item"><p>Oct</p></li>
-						<li class="date-item"><p>Nov</p></li>
-						<li class="date-item"><p>Dec</p></li>
-					</ul>
-				</div>
-				<h5 style="color:dodgerblue; font-style:italic;">Software Development Engineering Intern</h5>
-				<h5>I worked on Amazon Web Services as part of the Elastic Cloud Compute (EC2) networking software team. It was really cool to be at the forefront of cloud technology. Under the tutelage of some of the best engineers in the industry, I learned so much about systems, networking, and software development.</h5>
 			</div>
 		</div>
-		<div class="row experience">
-			<div class="yeah">
-				<div class="row timeline-info">
-					<div class="logo">
-						<div class="front"><img src="img/nasa.png" class="img-responsive"></div>
-						<div class="back"><img src="img/jpl.jpg" class="img-responsive"></div>
+		<div class="experience-wrapper">
+			<div class="row experience hidden testing">
+				<div class="work-left">
+					<div class="row timeline-info">
+						<div class="logo">
+							<div class="front"><img src="img/nasa.png" class="img-responsive"></div>
+						</div>
+					</div>
+					<div class="work-label">
+						<div class="work-place">
+							<h3>NASA JPL</h3>
+						</div>
+						<div class="work-location">
+							<svg class="octicon octicon-location" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6 0C2.69 0 0 2.5 0 5.5 0 10.02 6 16 6 16s6-5.98 6-10.5C12 2.5 9.31 0 6 0zm0 14.55C4.14 12.52 1 8.44 1 5.5 1 3.02 3.25 1 6 1c1.34 0 2.61.48 3.56 1.36.92.86 1.44 1.97 1.44 3.14 0 2.94-3.14 7.02-5 9.05zM8 5.5c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"></path></svg>
+							<span class="octicon-label">Pasadena, CA</span>
+						</div>
 					</div>
 				</div>
-				<div class="location">
-					<h3 style="text-align:center;">NASA JPL</h3>
-					<h5 style="text-align:center;">Pasadena, CA</h5>
+				<div class="work-right">
+					<div class="work-timeline">
+						<ul>
+							<li class="date-item year"><p>2017</p></li>
+							<li class="date-item start"><p>Jan</p></li>
+							<li class="date-item"><p>Feb</p></li>
+							<li class="date-item"><p>Mar</p></li>
+							<li class="date-item"><p>Apr</p></li>
+							<li class="date-item active start-date"><p>May</p></li>
+							<li class="date-item active"><p>Jun</p></li>
+							<li class="date-item active"><p>Jul</p></li>
+							<li class="date-item active"><p>Aug</p></li>
+							<li class="date-item"><p>Sep</p></li>
+							<li class="date-item"><p>Oct</p></li>
+							<li class="date-item"><p>Nov</p></li>
+							<li class="date-item"><p>Dec</p></li>
+						</ul>
+					</div>
+					<div class="work-timeline">
+						<ul>
+							<li class="date-item year"><p>2016</p></li>
+							<li class="date-item start"><p>Jan</p></li>
+							<li class="date-item"><p>Feb</p></li>
+							<li class="date-item"><p>Mar</p></li>
+							<li class="date-item"><p>Apr</p></li>
+							<li class="date-item active start-date"><p>May</p></li>
+							<li class="date-item active"><p>Jun</p></li>
+							<li class="date-item active"><p>Jul</p></li>
+							<li class="date-item active"><p>Aug</p></li>
+							<li class="date-item"><p>Sep</p></li>
+							<li class="date-item"><p>Oct</p></li>
+							<li class="date-item"><p>Nov</p></li>
+							<li class="date-item"><p>Dec</p></li>
+						</ul>
+					</div>
+					<h5 style="color:dodgerblue; font-style:italic;">Undergraduate Engineering Intern</h5>
+					<h5>I worked under the Component Engineering and Assurance Office at JPL. I worked directly with the electrical and electronic parts that will eventually be sent into space as part of projects like Mars 2020. I also analyzed and automated the inventory process with VBA scripts.</h5>
 				</div>
-			</div>
-			<div class="beah">
-				<div class="experience-line">
-					<ul>
-						<li class="date-item year"><p>2017</p></li>
-						<li class="date-item start"><p>Jan</p></li>
-						<li class="date-item"><p>Feb</p></li>
-						<li class="date-item"><p>Mar</p></li>
-						<li class="date-item"><p>Apr</p></li>
-						<li class="date-item active date_start"><p>May</p></li>
-						<li class="date-item active"><p>Jun</p></li>
-						<li class="date-item active"><p>Jul</p></li>
-						<li class="date-item active"><p>Aug</p></li>
-						<li class="date-item"><p>Sep</p></li>
-						<li class="date-item"><p>Oct</p></li>
-						<li class="date-item"><p>Nov</p></li>
-						<li class="date-item"><p>Dec</p></li>
-					</ul>
-				</div>
-				<div class="experience-line">
-					<ul>
-						<li class="date-item year"><p>2016</p></li>
-						<li class="date-item start"><p>Jan</p></li>
-						<li class="date-item"><p>Feb</p></li>
-						<li class="date-item"><p>Mar</p></li>
-						<li class="date-item"><p>Apr</p></li>
-						<li class="date-item active date_start"><p>May</p></li>
-						<li class="date-item active"><p>Jun</p></li>
-						<li class="date-item active"><p>Jul</p></li>
-						<li class="date-item active"><p>Aug</p></li>
-						<li class="date-item"><p>Sep</p></li>
-						<li class="date-item"><p>Oct</p></li>
-						<li class="date-item"><p>Nov</p></li>
-						<li class="date-item"><p>Dec</p></li>
-					</ul>
-				</div>
-				<h5 style="color:dodgerblue; font-style:italic;">Undergraduate Engineering Intern</h5>
-				<h5>I worked under the Component Engineering and Assurance Office at JPL. I worked directly with the electrical and electronic parts that will eventually be sent into space as part of projects like Mars 2020. I also analyzed and automated the inventory process with VBA scripts.</h5>
 			</div>
 		</div>
 	</div>
@@ -216,7 +241,7 @@
 
 <!--- Darkened part with 4 hobbies -->
 <section id="hobbies">
-		<div class="container">
+		<div class="container hidden">
 		<h1>Hobbies</h1>
 			<div class="row hobbies">
 				<div class="col-md-3 text-center">
@@ -251,9 +276,9 @@
 		</div>
 </section>
 
-<script src="js/smooth-scroll.js"></script>
-<script>
-var scroll = new SmoothScroll('a[href*="#"]');
-</script>
+<script src="js/scroll-animate.js"></script>
+	<script>
+		scrollAnimate().init();
+	</script>
 </body>
 </html>
