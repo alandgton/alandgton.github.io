@@ -765,55 +765,6 @@ Fallback
 /*************************************
 Media Queries
 **************************************/
-@media screen and (max-width: 600px) {
-	#school {
-		height: 3px!important;
-	}
-	.club-block {
-		width: 300px;
-		height: 300px;
-		margin: 30px;
-	}
-	
-	.club {
-		width: 300px;
-		height: 300px;
-		-webkit-transform: translateZ(-150px);
-		-moz-transform: translateZ(-150px);
-		transform: translateZ(-150px);
-	}
-	
-	.club .club-logo, 
-	.club .info {
-		position: absolute;
-		width: 300px;
-		height: 300px;
-	}
-	
-	.club .club-logo {
-		-webkit-transform: translateZ(150px);
-		-moz-transform: translateZ(150px);
-		transform: translateZ(150px);
-	}
-	
-	.club .info {
-		-webkit-transform: rotateY(90deg) translateZ(150px);
-		-moz-transform: rotateY(90deg) translateZ(150px);
-		transform: rotateY(90deg) translateZ(150px);
-	}
-
-	.csstransforms3d .club::after {
-		width: 300px;
-		height: 300px;
-		position: absolute;
-		box-shadow: 0 30px 50px rgba(0,0,0,0.3);
-		-webkit-transform: rotateX(90deg) translateY(150px);
-		-moz-transform: rotateX(90deg) translateY(150px);
-		transform: rotateX(90deg) translateY(150px);
-	}
-
-}
-
 @media screen and (max-width: 1150px) {
 	#school {
 		height: 2000px!important;
@@ -883,5 +834,72 @@ Media Queries
 		left: 50%;
 		margin-left: -200px;
 	}
+}
+
+@media screen and (max-width: 600px) {
+	#school {
+		height: 2000px;
+	}
+	.club-block {
+		width: 300px;
+		height: 300px;
+		margin: 30px;
+	}
+	
+	.club {
+		width: 300px;
+		height: 300px;
+		-webkit-transform: translateZ(-150px);
+		-moz-transform: translateZ(-150px);
+		transform: translateZ(-150px);
+	}
+	
+	.club .club-logo, 
+	.club .info {
+		position: absolute;
+		width: 300px;
+		height: 300px;
+	}
+	
+	.club .club-logo {
+		-webkit-transform: translateZ(150px);
+		-moz-transform: translateZ(150px);
+		transform: translateZ(150px);
+	}
+	
+	.club .info {
+		-webkit-transform: rotateY(90deg) translateZ(150px);
+		-moz-transform: rotateY(90deg) translateZ(150px);
+		transform: rotateY(90deg) translateZ(150px);
+	}
+
+	.csstransforms3d .club::after {
+		width: 300px;
+		height: 300px;
+		position: absolute;
+		box-shadow: 0 30px 50px rgba(0,0,0,0.3);
+		-webkit-transform: rotateX(90deg) translateY(150px);
+		-moz-transform: rotateX(90deg) translateY(150px);
+		transform: rotateX(90deg) translateY(150px);
+	}
+	
+	.tutor {
+		position: absolute;
+		left: 50%;
+		margin-left: -150px;
+	}
+
+	.anova {
+		position: absolute;
+		left: 50%;
+		margin-left: -150px;
+	}
+
+	.csm {
+		position: absolute;
+		left: 50%;
+		margin-left: -150px;
+	}
 
 }
+
