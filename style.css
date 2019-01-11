@@ -4,7 +4,7 @@
 	padding: 0;
 }
 
-body {
+.alpha-wrapper {
 	overflow-x: hidden;
 	overflow-y: scroll;
 }
