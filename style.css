@@ -4,6 +4,11 @@
 	padding: 0;
 }
 
+body {
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
 @keyframes fade-in {
 	from { opacity: 0}
 	to	{ opacity: 1}
