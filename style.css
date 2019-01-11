@@ -2,7 +2,6 @@
 {
 	margin: 0;
 	padding: 0;
-	overflow-x: hidden;
 }
 
 @keyframes fade-in {
@@ -147,9 +146,10 @@
 
 .experience-wrapper {
 	position: relative;
-	width: 90%;
+	width: 75%;
 	margin: auto;
 	height: 400px;
+	border: 2px solid black;
 }
 
 .experience {
@@ -197,7 +197,7 @@ Facebook Tile
 	width: 100%;
 	text-align: center;
 	font-style: italic;
-	top: 5px;
+	top: 15px;
 	color: white;
 }
 
@@ -252,7 +252,7 @@ Amazon Tile
 	width: 100%;
 	text-align: center;
 	font-style: italic;
-	top: 5px;
+	top: 15px;
 	color: white;
 }
 
@@ -307,7 +307,7 @@ JPL Tile
 	width: 100%;
 	text-align: center;
 	font-style: italic;
-	top: 5px;
+	top: 15px;
 	color: white;
 }
 
@@ -369,12 +369,6 @@ JPL Tile
 		width: 80%;
 		margin: auto;
 	}
-
-	.work-left, .work-right {
-		width: 100%;
-		margin: auto;
-		padding: 10 0px;
-	}
 }
 
 @media screen and (min-width: 600px) {
@@ -392,12 +386,6 @@ JPL Tile
 	.work-container {
 		width: 90%;
 		margin: auto;
-	}
-
-	.work-left, .work-right {
-		width: 100%;
-		margin: auto;
-		padding: 10 0px;
 	}
 }
 
@@ -418,7 +406,6 @@ JPL Tile
 	.berkeley-experience p {
 		line-height: 1.5;
 		display: inline-block;
-		vertical-align: middle;
 	}
 
 	.work-container {
@@ -427,19 +414,17 @@ JPL Tile
 		margin: auto;
 	}
 
-	.work-left {
-		display: inline-block;
-		width: 30%;
-	}
-
-	.work-right {
-		display: inline-block;
-		width: 70%;
-	}
-
 	.logo img {
 		margin: auto;
 		border-radius: 8px;
+	}
+
+	.work-position p {
+		font-size: 32px;
+	}
+
+	.work-place p {
+		font-size: 64px;
 	}
 }
 
@@ -448,16 +433,16 @@ Work Timeline
 **************************************/
 .work-timeline {
 	min-width: 650px;
-	width: 100%;
-	margin: auto;
+	width: 90%;
+	margin-left: 200px;
+	margin-top: auto;
+	margin-bottom: auto;
 	text-align: center;
 }
 
 .date-item {
 	width: 3vw;
 	height: 3vw;
-	max-width: 4px;
-	max-height: 4px;
 	text-align: center;
 	line-height: 3vw;
 	border-radius: 50%;
@@ -607,7 +592,7 @@ Build the scene and rotate on hover
 .club:hover, .club:active {
 	-webkit-transform: rotateY(-78deg) translateZ(20px);
 	-moz-transform: rotateY(-78deg) translateZ(20px);
-	transform: rotateY(-78deg) translateZ(20px);
+	transform: rotateY(-76deg) translateZ(20px);
 }
 
 /*************************************
@@ -637,21 +622,53 @@ Transform and style the two planes
 	-webkit-transform: rotateY(90deg) translateZ(200px);
 	-moz-transform: rotateY(90deg) translateZ(200px);
 	transform: rotateY(90deg) translateZ(200px);
-	border: 1px solid #B8B5B5;
 	font-size: 0.75em;
 }
 
 .tutor-info {
-	background-color: dodgerblue!important;
+	background-color: #b3deff!important;
+	border: 3px solid #00477F;
 }
 
 .anova-info {
 	background-color: #248487!important;
+	border: 5px solid #D0F9FF;
 }
 
 .csm-info {
 	background-color: #008000!important;
+	border: 5px solid #D8F6D8;
 }
+/*************************************
+Movie information
+**************************************/
+
+.info header {
+	color: #FFF;
+	padding: 7px 10px;
+	font-weight: bold;
+	height: 50px;
+	text-shadow: 0px 1px 1px rgba(0,0,0,1);
+}
+
+.info header h1 {
+	margin: 0 0 2px;
+	font-size: 1.4em;
+}
+
+.info p {
+	padding: 1.2em 1.4em;
+	margin: 2px 0 0;
+	font-weight: 500;
+	color: #FFF;
+	line-height: 1.4em;
+	text-shadow: 0px 1px 1px rgba(0,0,0,0.3);
+}
+
+.tutor-info p {
+	color: #005799;
+}
+
 /*************************************
 Shadow beneath the 3D object
 **************************************/
@@ -662,7 +679,7 @@ Shadow beneath the 3D object
 	height: 400px;
 	position: absolute;
 	bottom: 0;
-	box-shadow: 0 30px 50px rgba(0,0,0,0.3);
+	box-shadow: 0 100px 50px rgba(0,0,0,0.5);
 	-webkit-transform-origin: 100% 100%;
 	-moz-transform-origin: 100% 100%;
 	transform-origin: 100% 100%;
@@ -675,40 +692,7 @@ Shadow beneath the 3D object
 }
 
 .csstransforms3d .club:hover::after {
-	box-shadow: 20px -5px 50px rgba(0,0,0,0.3);
-}
-
-/*************************************
-Movie information
-**************************************/
-
-.info header {
-	color: #FFF;
-	padding: 7px 10px;
-	font-weight: bold;
-	height: 195px;
-	background-size: contain;
-	background-repeat: no-repeat;
-	text-shadow: 0px 1px 1px rgba(0,0,0,1);
-}
-
-.info header h1 {
-	margin: 0 0 2px;
-	font-size: 1.4em;
-}
-
-.info header .rating {
-	border: 1px solid #FFF;
-	padding: 0px 3px;
-}
-
-.info p {
-	padding: 1.2em 1.4em;
-	margin: 2px 0 0;
-	font-weight: 700;
-	color: #666;
-	line-height: 1.4em;
-	border-top: 10px solid #555;
+	box-shadow: 70px -5px 50px rgba(0,0,0,0.5);
 }
 
 /*************************************
@@ -724,21 +708,21 @@ Generate "lighting" using box shadows
 }
 
 .csstransforms3d .club .club-logo {
-	box-shadow: inset 0px 0px 40px rgba(255,255,255,0);
+	box-shadow: inset 0px 0px 60px rgba(255,255,255,0);
 }
 
 .csstransforms3d .club:hover .club-logo {
-	box-shadow: inset 300px 0px 40px rgba(255,255,255,0.8);
+	box-shadow: inset 10px 0px 60px rgba(255,255,255,0.8);
 }
 
 .csstransforms3d .club .info, 
 .csstransforms3d .club .info header {
-	box-shadow: inset -300px 0px 40px rgba(0,0,0,0.5);
+	box-shadow: inset -10px 0px 60px rgba(0,0,0,0.5);
 }
 
 .csstransforms3d .club:hover .info, 
 .csstransforms3d .club:hover .info header {
-	box-shadow: inset 0px 0px 40px rgba(0,0,0,0);
+	box-shadow: inset 0px 0px 60px rgba(0,0,0,0);
 }
 
 /*************************************
@@ -903,6 +887,4 @@ Media Queries
 		left: 50%;
 		margin-left: -150px;
 	}
-
 }
-
