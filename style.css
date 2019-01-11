@@ -11,8 +11,8 @@
 
 #loading-screen {
 	position: relative;
-	height: 100%;
-	width: 100%;
+	height: 100vh;
+	width: 100vw;
 	background-color: black;
 	z-index: -5;
 }
@@ -56,6 +56,41 @@
 	text-align: center;
 	font-size: 50px;
 	color: white;
+}
+
+@media screen and (max-width: 600px) {
+	.portrait {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-left: -75px;
+		margin-top: -130px;
+	}
+
+	.portrait img {
+		width: 150px;
+		height: 150px;
+		border-radius: 100%;
+		border: 5px solid white;
+	}
+
+	.portrait-caption {
+		width: 50%;
+		min-width: 250px;
+		margin: auto;
+		height: 100px;
+		position: absolute;
+		transform: translate(-50%, -20%);
+		border: 5px solid white;
+		z-index: -3;
+	}
+	
+	.portrait-caption p {
+		padding-top: 50px;
+		text-align: center;
+		font-size: 20px;
+		color: white;
+	}
 }
 
 #school {
@@ -730,6 +765,54 @@ Fallback
 /*************************************
 Media Queries
 **************************************/
+@media screen and (max-width: 600px) {
+	#school {
+		height: 3px!important;
+	}
+	.club-block {
+		width: 300px;
+		height: 300px;
+		margin: 30px;
+	}
+	
+	.club {
+		width: 300px;
+		height: 300px;
+		-webkit-transform: translateZ(-150px);
+		-moz-transform: translateZ(-150px);
+		transform: translateZ(-150px);
+	}
+	
+	.club .club-logo, 
+	.club .info {
+		position: absolute;
+		width: 300px;
+		height: 300px;
+	}
+	
+	.club .club-logo {
+		-webkit-transform: translateZ(150px);
+		-moz-transform: translateZ(150px);
+		transform: translateZ(150px);
+	}
+	
+	.club .info {
+		-webkit-transform: rotateY(90deg) translateZ(150px);
+		-moz-transform: rotateY(90deg) translateZ(150px);
+		transform: rotateY(90deg) translateZ(150px);
+	}
+
+	.csstransforms3d .club::after {
+		width: 300px;
+		height: 300px;
+		position: absolute;
+		box-shadow: 0 30px 50px rgba(0,0,0,0.3);
+		-webkit-transform: rotateX(90deg) translateY(150px);
+		-moz-transform: rotateX(90deg) translateY(150px);
+		transform: rotateX(90deg) translateY(150px);
+	}
+
+}
 
 @media screen and (max-width: 1150px) {
 	#school {
