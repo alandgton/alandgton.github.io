@@ -77,26 +77,26 @@
 		position: absolute;
 		top: 50%;
 		left: 50%;
-		margin-left: -75px;
-		margin-top: -130px;
+		margin-left: -100px;
+		margin-top: -180px;
 	}
 
 	.portrait img {
-		width: 150px;
-		height: 150px;
+		width: 200px;
+		height: 200px;
 		border-radius: 100%;
 		border: 5px solid white;
 	}
 
 	.portrait-caption {
 		width: 50%;
-		min-width: 250px;
+		min-width: 350px;
 		margin: auto;
 		height: 100px;
 		position: absolute;
 		transform: translate(-50%, -20%);
 		border: 5px solid white;
-		z-index: -3;
+		z-index: 3;
 	}
 	
 	.portrait-caption p {
@@ -346,7 +346,7 @@ JPL Tile
 
 .work h1 {
 	text-align: center;
-	padding-bottom: 10px;
+	padding-bottom: 40px;
 }
 
 .work-label {
@@ -926,12 +926,25 @@ Media Queries
 
 @media screen and (max-width: 600px) {
 	#school {
-		height: 2000px;
+		height: 1000px;
 	}
+
 	.club-block {
 		width: 300px;
 		height: 300px;
 		margin: 30px;
+	}
+
+	.tutor {
+		top: 400px;
+	}
+
+	.anova {
+		top: 800px;
+	}
+
+	.csm {
+		top: 1200px;
 	}
 	
 	.club {
