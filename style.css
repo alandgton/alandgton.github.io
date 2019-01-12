@@ -4,10 +4,6 @@
 	padding: 0;
 }
 
-html {
-	scroll-behavior: smooth;
-}
-
 .alpha-wrapper {
 	overflow-x: hidden;
 	overflow-y: scroll;
@@ -31,8 +27,8 @@ html {
 	/*background-color: black;
 	background-image: linear-gradient(to bottom, black, gray);
 	background-attachment: fixed;
-	z-index: -5;*/
-	overflow: hidden!important;
+	z-index: -5;
+	overflow: hidden!important;*/
 }
 
 .portrait {
@@ -90,6 +86,7 @@ html {
 .next:hover {
 	color: white;
 }
+
 
 @media screen and (max-width: 600px) {
 	.portrait {
@@ -162,8 +159,9 @@ html {
 }
 
 #work {
-	padding-top: 50px;
-	padding-bottom: 50px;
+	height: 100%;
+	padding-top: 20px;
+	padding-bottom: 80px;
 	color: #fff;
 }
 
@@ -173,14 +171,22 @@ html {
 	display: block;
 	height: 3px;
 	width: 170px;
-	margin: 20px auto 5px;
+	margin: 10px auto 5px;
 }
 
 .experience-wrapper {
 	position: relative;
-	width: 75%;
 	margin: auto;
-	height: 400px;
+	height: 28%;
+}
+
+.logo img {
+	height: 80%;
+}
+
+.facebook-exp .logo img {
+	height: 60%;
+	margin-left: 30px;
 }
 
 .experience {
@@ -188,8 +194,7 @@ html {
 	width: 100%!important;
 	margin: auto!important;
 	border-radius: 30px;
-	height: 300px;
-	padding: 30px;
+	height: 80%;
 	z-index: 50;
 }
 
@@ -208,15 +213,9 @@ Facebook Tile
 
 .facebook-exp .logo {
 	position: absolute;
-	width: 200px;
-	height: 200px;
 	left: 10px;
 	top: 50%;
-	margin-top: -100px;
-}
-
-.facebook-exp .logo img {
-	width: 100%;
+	transform: translateY(-50%);
 }
 
 .facebook-exp .work-place {
@@ -234,7 +233,7 @@ Facebook Tile
 	width: 100%;
 	text-align: center;
 	font-style: italic;
-	top: 15px;
+	top: 5px;
 	color: white;
 }
 
@@ -262,16 +261,10 @@ Amazon Tile
 
 .amazon-exp .logo {
 	position: absolute;
-	height: 200px;
-	width: 200px;
 	left: 30px;
 	top: 50%;
-	margin-top: -100px;
+	transform: translateY(-50%);
 	color: white;
-}
-
-.amazon-exp .logo img {
-	width: 100%;
 }
 
 .amazon-exp .work-place {
@@ -289,7 +282,7 @@ Amazon Tile
 	width: 100%;
 	text-align: center;
 	font-style: italic;
-	top: 15px;
+	top: 5px;
 	color: white;
 }
 
@@ -317,16 +310,10 @@ JPL Tile
 
 .jpl-exp .logo {
 	position: absolute;
-	height: 200px;
-	width: 200px;
 	left: 30px;
 	top: 50%;
-	margin-top: -100px;
+	transform: translateY(-50%);
 	color: white;
-}
-
-.jpl-exp .logo img {
-	width: 100%;
 }
 
 .jpl-exp .work-place {
@@ -344,7 +331,7 @@ JPL Tile
 	width: 100%;
 	text-align: center;
 	font-style: italic;
-	top: 15px;
+	top: 5px;
 	color: white;
 }
 
@@ -384,165 +371,26 @@ JPL Tile
 	text-align: center;
 }
 
-.octicon-location {
-	padding-bottom: 3px;
-	transform: scale(1.4);
-}
-
-.octicon-label {
-	padding-left: 4px;
-	font-weight: 500;
-	font-size: 18px;
-	letter-spacing: -1px;
-}
-
-@media screen and (max-width: 600px) {
-	.school-container {
-		width: 80%;
-		margin: auto;
-	}
-
-	.work-container {
-		width: 90%;
-		margin: auto;
-	}
-
-	.experience-wrapper {
-		position: relative;
-		width: 80%;
-		margin: auto;
-		height: 400px;
-	}
-
-	.work-place {
-		left: 50%;
-		transform: translateX(-50%);
-		bottom: 35px!important;
-	}
-
-	.facebook-exp .logo {
-		width: 150px;
-		height: 150px;
-		left: 50%;
-		transform: translateX(-60%);
-	}
-
-	.amazon-exp .logo {
-		width: 150px;
-		height: 150px;
-		left: 50%;
-		top: 60%!important;
-		transform: translateX(-50%);
-	}
-
-	.jpl-exp .logo {
-		width: 150px;
-		height: 150px;
-		left: 50%;
-		top: 60%!important;
-		transform: translateX(-50%);
-	}
-
-	.work-timeline {
-		display: none;
-	}
-
-	.work-position,
-	.work-date {
-		left: 50%;
-		transform: translateX(-50%);
-		font-size: 14px;
-	}
-
-	.work-date {
-		top: 35px;
-	}
-}
-
-@media screen and (min-width: 600px) {
-	.school-container {
-		width: 60%;
-		margin: auto;
-	}
-
-	.berkeley-experience {
-		width: 90%;
-		margin: auto;
-		text-align: center;
-	}
-
-	.work-container {
-		width: 90%;
-		margin: auto;
-	}
-
-	.work-date {
-		display: none;
-	}
-}
-
-@media screen and (min-width: 1200px) {
-
-	.school-container {
-		width: 100%;
-		margin: auto;
-	}
-
-	.berkeley-experience {
-		width: 60%;
-		margin: auto;
-		text-align: center;
-		padding: 20px;
-	}
-
-	.berkeley-experience p {
-		line-height: 1.5;
-		display: inline-block;
-	}
-
-	.work-container {
-		width: 100%;
-		height: 1500px;
-		margin: auto;
-	}
-
-	.logo img {
-		margin: auto;
-		border-radius: 8px;
-	}
-
-	.work-position p {
-		font-size: 32px;
-	}
-
-	.work-place p {
-		font-size: 64px;
-	}
-
-	.work-date {
-		display: none;
-	}
-}
-
 /*************************************
 Work Timeline
 **************************************/
 .work-timeline {
-	min-width: 650px;
+	position: absolute;
+	right: 0;
+	top: 37%;
 	width: 90%;
-	margin-left: 200px;
 	margin-top: auto;
 	margin-bottom: auto;
 	text-align: center;
 }
 
 .date-item {
-	width: 3vw;
-	height: 3vw;
+	width: 2.5vw;
+	height: 2.5vw;
 	text-align: center;
-	line-height: 3vw;
+	line-height: 2.5vw;
 	border-radius: 50%;
-	margin: 0 0.5vw;
+	margin: 0 0.325vw;
 	display: inline-block;
 	color: white;
 	position: relative;
@@ -550,7 +398,7 @@ Work Timeline
 }
 
 .date-item p {
-	font-size: 1vw;
+	font-size: 0.75vw;
 }
 
 .date-item:hover {
@@ -560,9 +408,9 @@ Work Timeline
 .date-item::before{
 	content: '';
 	position: absolute;
-	top: 1.5vw;
-	left: -1.5vw;
-	width: 1.5vw;
+	top: 1.25vw;
+	left: -1.25vw;
+	width: 1.25vw;
 	height: 3.2px;
 	z-index: -1;
 }
@@ -588,8 +436,186 @@ Work Timeline
 	display: none;
 }
 
-#hobbies
-{
+@media screen and (max-width: 600px) {
+	.experience-wrapper {
+		width: 90%;
+	}
+	
+	.logo img {
+		width: 10%;
+		height: auto;
+	}
+
+	.facebook-exp .logo img {
+		width: 10%;
+		height: auto;
+		margin-left: 20px;
+	}
+	
+	.work-position p {
+		font-size: 2vh;
+	}
+
+	.work-place p {
+		font-size: 4vh;
+	}
+
+	.work-date {
+		display: none;
+	}
+
+	.date-item {
+		width: 4vw;
+		height: 4vw;
+		line-height: 4vw;
+		margin: 0 0.1vw;
+	}
+	
+	.date-item p {
+		font-size: 1.5vw;
+	}
+
+	.date-item::before{
+		top: 2vw;
+		left: -1vw;
+		width: 1vw;
+		height: 3px;
+	}
+}
+
+@media screen and (min-width: 600px) {
+	.experience-wrapper {
+		width: 90%;
+	}
+	
+	.logo img {
+		width: 10%;
+		height: auto;
+	}
+
+	.facebook-exp .logo img {
+		width: 10%;
+		height: auto;
+		margin-left: 20px;
+	}
+	
+	.work-position p {
+		font-size: 3vh;
+	}
+
+	.work-place p {
+		font-size: 5vh;
+	}
+
+	.work-date {
+		display: none;
+	}
+
+	.date-item {
+		width: 4vw;
+		height: 4vw;
+		line-height: 4vw;
+		margin: 0 0.2vw;
+	}
+	
+	.date-item p {
+		font-size: 1.5vw;
+	}
+
+	.date-item::before{
+		top: 2vw;
+		left: -1vw;
+		width: 1vw;
+		height: 3px;
+	}
+}
+
+
+@media screen and (min-width: 1200px) {
+	.experience-wrapper {
+		width: 75%;
+	}
+	
+	.work-position p {
+		font-size: 3vh;
+	}
+
+	.work-place p {
+		font-size: 5vh;
+	}
+
+	.work-date {
+		display: none;
+	}
+
+	.date-item {
+		width: 3vw;
+		height: 3vw;
+		line-height: 3vw;
+		margin: 0 0.25vw;
+	}
+	
+	.date-item p {
+		font-size: 1vw;
+	}
+
+	.date-item::before{
+		top: 1.5vw;
+		left: -1vw;
+		width: 1vw;
+		height: 3px;
+	}
+
+}
+
+@media screen and (min-width: 1500px) {
+
+	.school-container {
+		width: 100%;
+		margin: auto;
+	}
+
+	.berkeley-experience {
+		width: 60%;
+		margin: auto;
+		text-align: center;
+		padding: 20px;
+	}
+
+	.berkeley-experience p {
+		line-height: 1.5;
+		display: inline-block;
+	}
+
+	.work-container {
+		width: 100%;
+		height: 100%;
+		margin: auto;
+	}
+
+	.experience-wrapper {
+		width: 70%;
+	}
+
+	.logo img {
+		margin: auto;
+		border-radius: 8px;
+	}
+
+	.work-position p {
+		font-size: 3vh;
+	}
+
+	.work-place p {
+		font-size: 5vh;
+	}
+
+	.work-date {
+		display: none;
+	}
+}
+
+#hobbies {
 	position: relative;
 	background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0,0,0,0.8)), url(img/rainwindow.jpg);
 	background-size: cover;
