@@ -4,6 +4,10 @@
 	padding: 0;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 .alpha-wrapper {
 	overflow-x: hidden;
 	overflow-y: scroll;
@@ -28,6 +32,7 @@
 	background-image: linear-gradient(to bottom, black, gray);
 	background-attachment: fixed;
 	z-index: -5;*/
+	overflow: hidden!important;
 }
 
 .portrait {
@@ -69,6 +74,20 @@
 	padding-top: 100px;
 	text-align: center;
 	font-size: 50px;
+	color: white;
+}
+
+.next {
+	position: absolute;
+	border-radius: 50%;
+	color: white;
+	font-size: 60px;
+	left: 50%;
+	bottom: 0;
+	transform: translateX(-50%) rotate(90deg);
+}
+
+.next:hover {
 	color: white;
 }
 
