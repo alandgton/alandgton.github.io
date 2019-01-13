@@ -399,15 +399,20 @@ Work Timeline
 	display: none;
 }
 
-.berkeley-experience p {
-	font-size: 0.5em;
-}
-
-
 @media screen and (max-width: 600px) {
 	.school-container {
 		width: 100%;
 		margin: auto;
+	}
+
+	.berkeley-experience {
+		width: 80%;
+		margin: auto;
+		text-align: center;
+	}
+
+	.berkeley-experience p {
+		font-size: 14px;
 	}
 
 	.experience-wrapper {
@@ -531,6 +536,16 @@ Work Timeline
 		width: 1vw;
 		height: 3px;
 	}
+
+	.berkeley-experience {
+		width: 80%;
+		margin: auto;
+		text-align: center;
+	}
+
+	.berkeley-experience p {
+		font-size: 16px;
+	}
 }
 
 @media screen and (min-width: 1200px) {
@@ -589,6 +604,15 @@ Work Timeline
 		height: 3px;
 	}
 
+	.berkeley-experience {
+		margin: auto;
+		width: 80%;
+		text-align: center;
+	}
+
+	.berkeley-experience p {
+		font-size: 18px;
+	}
 }
 
 @media screen and (min-width: 1500px) {
@@ -606,6 +630,7 @@ Work Timeline
 	}
 
 	.berkeley-experience p {
+		font-size: 1vw;
 		line-height: 1.5;
 		display: inline-block;
 	}
@@ -658,9 +683,8 @@ Work Timeline
 .stage {
 	list-style: none;
 	padding: 0;
-	width: 2500px;
+	width: 3000px;
 	height: 100%;
-	margin: auto;
 }
 
 /*************************************
@@ -668,13 +692,14 @@ Build the scene and rotate on hover
 **************************************/
 
 .club-block {
-	float: left;
 	width: 46vh;
 	height: 46vh;
 	-webkit-perspective: 1000px;
 	-moz-perspective: 1000px;
 	perspective: 1000px;
-	margin: 75px 25px auto auto;
+	margin-left: 100px;
+	margin-right: 200px;
+	margin-top: 10vh;
 }
 
 .club {
@@ -739,12 +764,12 @@ Transform and style the two planes
 }
 
 .tutor .info {
-	background-color: #b3deff!important;
+	background-color: #0082e6!important;
 	border: 5px solid #00477F;
 }
 
 .tutor .side-block:before {
-	border-color: #00477F #80c8ff;
+	border-color: #00477F #0065b3;
 }
 
 .anova .info {
@@ -788,11 +813,8 @@ Movie information
 	font-weight: 500;
 	color: #FFF;
 	line-height: 1.4em;
-	text-shadow: 0px 1px 1px rgba(0,0,0,0.3);
-}
-
-.tutor .info p {
-	color: #005799;
+	text-shadow: 0px 1px 1px rgba(0,0,0,1);
+	white-space: normal;
 }
 
 /*************************************
@@ -826,7 +848,7 @@ Posters and still images
 **************************************/
 
 .club-block:nth-child(1) .club .club-logo {
-  background-image: url(img/berkeng.jpg);
+  background-image: url(img/csm.png);
 }
 
 .club-block:nth-child(2) .club-logo {
@@ -834,7 +856,7 @@ Posters and still images
 }
 
 .club-block:nth-child(3) .club-logo {
-  background-image: url(img/csm.png);
+  background-image: url(img/berkeng.jpg);
 }
 
 /*************************************
