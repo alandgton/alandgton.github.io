@@ -400,6 +400,11 @@ Work Timeline
 }
 
 @media screen and (max-width: 600px) {
+	.school-container {
+		width: 80%;
+		margin: auto;
+	}
+
 	.experience-wrapper {
 		width: 95%;
 	}
@@ -447,7 +452,7 @@ Work Timeline
 		width: 4vw;
 		height: 4vw;
 		line-height: 4vw;
-		margin: 0 0.002vw;
+		margin: 0 0.001vw;
 	}
 	
 	.date-item p {
@@ -456,8 +461,8 @@ Work Timeline
 
 	.date-item::before{
 		top: 2vw;
-		left: -1vw;
-		width: 1vw;
+		left: -1.55vw;
+		width: 2vw;
 		height: 1px;
 	}
 }
@@ -706,24 +711,38 @@ Build the scene and rotate on hover
 **************************************/
 
 .club-block {
-	width: 400px;
-	height: 400px;
-	margin: 30px;
+	width: 20vw;
+	height: 20vw;
 	float: left;
 	-webkit-perspective: 1000px;
 	-moz-perspective: 1000px;
 	perspective: 1000px;
 }
 
+.tutor {
+	position: absolute;
+	left: 10%;
+}
+
+.anova {
+	position: absolute;
+	left: 40%;
+}
+
+.csm {
+	position: absolute;
+	left: 70%;
+}
+
 .club {
-	width: 400px;
-	height: 400px;
+	width: 20vw;
+	height: 20vw;
 	-webkit-transform-style: preserve-3d;
 	-moz-transform-style: preserve-3d;
 	transform-style: preserve-3d;
-	-webkit-transform: translateZ(-200px);
-	-moz-transform: translateZ(-200px);
-	transform: translateZ(-200px);
+	-webkit-transform: translateZ(-10em);
+	-moz-transform: translateZ(-10em);
+	transform: translateZ(-10vw);
 	-webkit-transition: -webkit-transform 350ms;
 	-moz-transition: -moz-transform 350ms;
 	transition: transform 350ms;
@@ -742,8 +761,8 @@ Transform and style the two planes
 .club .club-logo, 
 .club .info {
 	position: absolute;
-	width: 400px;
-	height: 400px;
+	width: 20vw;
+	height: 20vw;
 	background-color: #fff;
 	-webkit-backface-visibility: hidden;
 	-moz-backface-visibility: hidden;
@@ -751,17 +770,17 @@ Transform and style the two planes
 }
 
 .club .club-logo {
-	-webkit-transform: translateZ(200px);
-	-moz-transform: translateZ(200px);
-	transform: translateZ(200px);
+	-webkit-transform: translateZ(10vw);
+	-moz-transform: translateZ(10vw);
+	transform: translateZ(10vw);
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 
 .club .info {
-	-webkit-transform: rotateY(90deg) translateZ(200px);
-	-moz-transform: rotateY(90deg) translateZ(200px);
-	transform: rotateY(90deg) translateZ(200px);
+	-webkit-transform: rotateY(90deg) translateZ(10em);
+	-moz-transform: rotateY(90deg) translateZ(10em);
+	transform: rotateY(90deg) translateZ(10vw);
 	font-size: 0.75em;
 }
 
@@ -839,8 +858,8 @@ Shadow beneath the 3D object
 
 .csstransforms3d .club::after {
 	content: '';
-	width: 400px;
-	height: 400px;
+	width: 20vw;
+	height: 20vw;
 	position: absolute;
 	bottom: 0;
 	box-shadow: 0 100px 50px rgba(0,0,0,0.5);
@@ -849,7 +868,7 @@ Shadow beneath the 3D object
 	transform-origin: 100% 100%;
 	-webkit-transform: rotateX(90deg) translateY(200px);
 	-moz-transform: rotateX(90deg) translateY(200px);
-	transform: rotateX(90deg) translateY(200px);
+	transform: rotateX(90deg) translateY(10vw);
 	-webkit-transition: box-shadow 350ms;
 	-moz-transition: box-shadow 350ms;
 	transition: box-shadow 350ms;
@@ -857,6 +876,22 @@ Shadow beneath the 3D object
 
 .csstransforms3d .club:hover::after {
 	box-shadow: 70px -5px 50px rgba(0,0,0,0.5);
+}
+
+/*************************************
+Posters and still images
+**************************************/
+
+.club-block:nth-child(1) .club .club-logo {
+  background-image: url(img/berkeng.jpg);
+}
+
+.club-block:nth-child(2) .club-logo {
+  background-image: url(img/anova2.jpg);
+}
+
+.club-block:nth-child(3) .club-logo {
+  background-image: url(img/csm.png);
 }
 
 /*************************************
@@ -888,23 +923,6 @@ Generate "lighting" using box shadows
 .csstransforms3d .club:hover .info header {
 	box-shadow: inset 0px 0px 60px rgba(0,0,0,0);
 }
-
-/*************************************
-Posters and still images
-**************************************/
-
-.club-block:nth-child(1) .club .club-logo {
-  background-image: url(img/berkeng.jpg);
-}
-
-.club-block:nth-child(2) .club-logo {
-  background-image: url(img/anova2.jpg);
-}
-
-.club-block:nth-child(3) .club-logo {
-  background-image: url(img/csm.png);
-}
-
 /*************************************
 Fallback
 **************************************/
@@ -915,153 +933,4 @@ Fallback
 
 /*************************************
 Media Queries
-**************************************/
-@media screen and (max-width: 1150px) {
-	#school {
-		height: 2000px!important;
-	}
-
-	.tutor {
-		position: absolute;
-		top: 20%;
-		left: 50%!important;
-		margin-left: -200px;
-	}
-
-	.anova {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		margin-top: -100px;
-		margin-left: -200px;
-	}
-
-	.csm {
-		position: absolute;
-		bottom: 1%;
-		left: 50%;
-		margin-left: -200px;
-	}
-
-}
-
-@media screen and (max-width: 1550px) {
-	#school {
-		height: 160vh;
-	}
-
-	.tutor {
-		position: absolute;
-		left: 10%;
-	}
-
-	.anova {
-		position: absolute;
-		right: 10%;
-	}
-
-	.csm {
-		position: absolute;
-		bottom: 10%;
-		left: 50%;
-		margin-left: -200px;
-	}
-
-}
-
-@media screen and (min-width: 1550px) {
-	.tutor {
-		position: absolute;
-		left: 5%;
-	}
-
-	.anova {
-		position: absolute;
-		right: 5%;
-	}
-
-	.csm {
-		position: absolute;
-		left: 50%;
-		margin-left: -200px;
-	}
-}
-
-@media screen and (max-width: 600px) {
-	#school {
-		height: 1000px;
-	}
-
-	.club-block {
-		width: 300px;
-		height: 300px;
-		margin: 30px;
-	}
-
-	.tutor {
-		top: 400px;
-	}
-
-	.anova {
-		top: 800px;
-	}
-
-	.csm {
-		top: 1200px;
-	}
-	
-	.club {
-		width: 300px;
-		height: 300px;
-		-webkit-transform: translateZ(-150px);
-		-moz-transform: translateZ(-150px);
-		transform: translateZ(-150px);
-	}
-	
-	.club .club-logo, 
-	.club .info {
-		position: absolute;
-		width: 300px;
-		height: 300px;
-	}
-	
-	.club .club-logo {
-		-webkit-transform: translateZ(150px);
-		-moz-transform: translateZ(150px);
-		transform: translateZ(150px);
-	}
-	
-	.club .info {
-		-webkit-transform: rotateY(90deg) translateZ(150px);
-		-moz-transform: rotateY(90deg) translateZ(150px);
-		transform: rotateY(90deg) translateZ(150px);
-	}
-
-	.csstransforms3d .club::after {
-		width: 300px;
-		height: 300px;
-		position: absolute;
-		box-shadow: 0 30px 50px rgba(0,0,0,0.3);
-		-webkit-transform: rotateX(90deg) translateY(150px);
-		-moz-transform: rotateX(90deg) translateY(150px);
-		transform: rotateX(90deg) translateY(150px);
-	}
-	
-	.tutor {
-		position: absolute;
-		left: 50%;
-		margin-left: -150px;
-	}
-
-	.anova {
-		position: absolute;
-		left: 50%;
-		margin-left: -150px;
-	}
-
-	.csm {
-		position: absolute;
-		left: 50%;
-		margin-left: -150px;
-	}
-}
+**************************************
