@@ -11,7 +11,7 @@
 
 .beta-wrapper {
 	background-color: black;
-	background-image: linear-gradient(to bottom, black, white);
+	background-image: linear-gradient(to bottom, black, #cccccc);
 	z-index: -100;
 }
 
@@ -24,11 +24,6 @@
 	position: relative;
 	height: 100vh;
 	width: 100vw;
-	/*background-color: black;
-	background-image: linear-gradient(to bottom, black, gray);
-	background-attachment: fixed;
-	z-index: -5;
-	overflow: hidden!important;*/
 }
 
 .portrait {
@@ -213,15 +208,6 @@ Facebook Tile
 	transform: translateY(-50%);
 }
 
-.facebook-exp .work-place {
-	position: absolute;
-	font-size: 5vw;
-	right: 5%;
-	bottom: 5px;
-	color: white;
-	margin-bottom: -30px;
-}
-
 .facebook-exp .work-position {
 	position: absolute;
 	font-size: 3vw;
@@ -262,15 +248,6 @@ Amazon Tile
 	color: white;
 }
 
-.amazon-exp .work-place {
-	position: absolute;
-	font-size: 5vw;
-	right: 5%;
-	bottom: 5px;
-	color: white;
-	margin-bottom: -30px;
-}
-
 .amazon-exp .work-position {
 	position: absolute;
 	font-size: 3vw;
@@ -309,15 +286,6 @@ JPL Tile
 	top: 50%;
 	transform: translateY(-50%);
 	color: white;
-}
-
-.jpl-exp .work-place {
-	position: absolute;
-	font-size: 5vw;
-	right: 5%;
-	bottom: 5px;
-	color: white;
-	margin-bottom: -30px;
 }
 
 .jpl-exp .work-position {
@@ -433,7 +401,7 @@ Work Timeline
 
 @media screen and (max-width: 600px) {
 	.experience-wrapper {
-		width: 90%;
+		width: 95%;
 	}
 	
 	.logo img {
@@ -452,6 +420,23 @@ Work Timeline
 
 	.work-date {
 		display: none;
+	}
+
+	.work-place {
+		position: absolute;
+		font-size: 5vw;
+		right: 5%;
+		bottom: 10%;
+		color: white;
+		margin-bottom: -30px;
+	}
+
+	.logo img {
+		width: 12%;
+	}
+
+	.facebook-exp .logo img {
+		transform: scale(1.3);
 	}
 
 	.date-item {
@@ -501,6 +486,23 @@ Work Timeline
 		display: none;
 	}
 
+	.logo img {
+		width: 20%;
+	}
+
+	.facebook-exp .logo img {
+		transform: scale(1.5);
+	}
+
+	.work-place {
+		position: absolute;
+		font-size: 5vw;
+		right: 5%;
+		bottom: 7%;
+		color: white;
+		margin-bottom: -30px;
+	}
+
 	.date-item {
 		width: 4vw;
 		height: 4vw;
@@ -520,7 +522,6 @@ Work Timeline
 	}
 }
 
-
 @media screen and (min-width: 1200px) {
 	.experience-wrapper {
 		width: 75%;
@@ -536,6 +537,23 @@ Work Timeline
 
 	.work-date {
 		display: none;
+	}
+
+	.work-place {
+		position: absolute;
+		font-size: 5vw;
+		right: 5%;
+		bottom: 5%;
+		color: white;
+		margin-bottom: -30px;
+	}
+
+	.logo img {
+		width: 20%;
+	}
+
+	.facebook-exp .logo img {
+		transform: scale(1.5);
 	}
 
 	.date-item {
@@ -588,8 +606,13 @@ Work Timeline
 	}
 
 	.logo img {
+		width: 20%;
 		margin: auto;
 		border-radius: 8px;
+	}
+
+	.facebook-exp .logo img {
+		transform: scale(1.5);
 	}
 
 	.work-position p {
