@@ -900,4 +900,50 @@ Fallback
 Media Queries
 **************************************/
 @media screen and (max-width: 600px) {
+
+	.club-block {
+		width: 32vh;
+		height: 32vh;
+		margin-left: 100px;
+		margin-right: 200px;
+		margin-top: 10vh;
+	}
+	
+	.club {
+		width: 32vh;
+		height: 32vh;
+		-webkit-transform: translateZ(-16vh);
+		-moz-transform: translateZ(-16vh);
+		transform: translateZ(-16vh);
+	}
+	
+	/*************************************
+	Transform and style the two planes
+	**************************************/
+	
+	.club .club-logo, 
+	.club .info {
+		width: 32vh;
+		height: 32vh;
+	}
+	
+	.club .club-logo {
+		-webkit-transform: translateZ(16vh);
+		-moz-transform: translateZ(16vh);
+		transform: translateZ(16vh);
+	}
+	
+	.club .info {
+		-webkit-transform: rotateY(90deg) translateZ(16vh);
+		-moz-transform: rotateY(90deg) translateZ(16vh);
+		transform: rotateY(90deg) translateZ(16vh);
+	}
+	
+	.csstransforms3d .club::after {
+		width: 32vh;
+		height: 32vh;
+		-webkit-transform: rotateX(90deg) translateY(16vh);
+		-moz-transform: rotateX(90deg) translateY(16vh);
+		transform: rotateX(90deg) translateY(16vh);
+	}
 }
