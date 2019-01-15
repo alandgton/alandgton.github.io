@@ -184,24 +184,22 @@
 	position: relative;
 	width: 100%!important;
 	margin: auto!important;
-	border-radius: 30px;
-	height: 20%;
-	z-index: 50;
+	border-radius: 0px;
+	height: 15%;
 }
 
 .content{
-	border-radius: 30px;
+	border-radius: 0px;
   border-bottom: 1px solid #ddd;
   display: none;
-	z-index: 50;
-	padding: 4vh;
+	padding: 2vh;
 }
 
 .content-text {
   padding: 10px 15px;
   margin: 0;
   color: #fff;
-	z-index: 50;
+	text-align: center;
 }
 
 /*************************************
@@ -210,7 +208,10 @@ Facebook Tile
 
 .facebook-exp {
 	background-color: #38569E;
-	border: 5px solid lightblue;
+}
+
+.facebook-desc {
+	background-color: #38569E;
 }
 
 .facebook-exp .logo {
@@ -230,18 +231,18 @@ Facebook Tile
 	color: white;
 }
 
-.facebook-exp .date-item,
-.facebook-exp .date-item::before {
+.facebook-desc .date-item,
+.facebook-desc .date-item::before {
 	background: lightblue;
 }
 
-.facebook-exp .active,
-.facebook-exp .active::before,
-.facebook-exp .year {
+.facebook-desc .active,
+.facebook-desc .active::before,
+.facebook-desc .year {
 	background: dodgerblue;
 }
 
-.facebook-exp .start-date::before {
+.facebook-desc .start-date::before {
 	background: lightblue;
 }
 
@@ -251,7 +252,10 @@ Amazon Tile
 
 .amazon-exp {
 	background-color: #FF9A00;
-	border: 5px solid #FFE0B3;
+}
+
+.amazon-desc {
+	background-color: #FF9A00;
 }
 
 .amazon-exp .logo {
@@ -272,18 +276,18 @@ Amazon Tile
 	color: white;
 }
 
-.amazon-exp .date-item,
-.amazon-exp .date-item::before {
+.amazon-desc .date-item,
+.amazon-desc .date-item::before {
 	background: #FFE0B3;
 }
 
-.amazon-exp .active,
-.amazon-exp .active::before,
-.amazon-exp .year {
+.amazon-desc .active,
+.amazon-desc .active::before,
+.amazon-desc .year {
 	background: #FF6600;
 }
 
-.amazon-exp .start-date::before {
+.amazon-desc .start-date::before {
 	background: #FFE0B3;
 }
 
@@ -293,10 +297,10 @@ JPL Tile
 
 .jpl-exp {
 	background-color: #000000;
-	border: 5px solid #A6A6A6;
 }
 
 .jpl-desc {
+	background-color: #000000;
 }
 
 .jpl-exp .logo {
@@ -317,21 +321,21 @@ JPL Tile
 	color: white;
 }
 
-.jpl-exp .date-item {
+.jpl-desc .date-item {
 	background: #A6A6A6;
 }
 
-.jpl-exp .date-item::before {
+.jpl-desc .date-item::before {
 	background: #A6A6A6;
 }
 
-.jpl-exp .active,
-.jpl-exp .active::before,
-.jpl-exp .year {
+.jpl-desc .active,
+.jpl-desc .active::before,
+.jpl-desc .year {
 	background: #4D4D4D;
 }
 
-.jpl-exp .start-date::before {
+.jpl-desc .start-date::before {
 	background: #A6A6A6;
 }
 
@@ -373,10 +377,11 @@ Work Timeline
 	text-align: center;
 	line-height: 2.5vw;
 	border-radius: 50%;
-	margin: 0 0.325vw;
+	margin: 0 0.625vw;
 	display: inline-block;
 	color: white;
 	transition: all 0.2s ease-in-out;
+	z-index: 70;
 }
 
 .date-item p {
@@ -394,6 +399,7 @@ Work Timeline
 	left: -1.25vw;
 	width: 1.25vw;
 	height: 3.2px;
+	z-index: -1;
 }
 
 
@@ -401,6 +407,10 @@ Work Timeline
 	display: none;
 }
 
+.active {
+	position: relative;
+	z-index: 100;
+}
 
 .year {
 	border-radius: 0%;
@@ -970,3 +980,15 @@ Media Queries
 	}
 }
 
+.popout {
+    animation: popout 1s ease;
+    -webkit-animation: popout 1s ease;
+}
+@keyframes popout {
+    from{transform:scale(0.6)}
+    to{transform:scale(1)}
+}
+@-webkit-keyframes popout {
+    from{-webkit-transform:scale(0)}
+    to{-webkit-transform:scale(1)}
+}
