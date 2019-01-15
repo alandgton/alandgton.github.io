@@ -12,7 +12,7 @@
 .beta-wrapper {
 	background-color: black;
 	background-image: linear-gradient(to bottom, black, #cccccc);
-	z-index: -100;
+	z-index: -1000;
 }
 
 @keyframes fade-in {
@@ -172,7 +172,8 @@
 .experience-wrapper {
 	position: relative;
 	margin: auto;
-	height: 28%;
+	margin-bottom: 10px;
+	height: auto;
 }
 
 .logo img {
@@ -180,25 +181,36 @@
 }
 
 .experience {
-	position: absolute;
+	position: relative;
 	width: 100%!important;
 	margin: auto!important;
 	border-radius: 30px;
-	height: 80%;
+	height: 20%;
 	z-index: 50;
 }
 
-.work-date {
-	position: absolute;
-	text-align: center;
-	color: white;
+.content{
+	border-radius: 30px;
+  border-bottom: 1px solid #ddd;
+  display: none;
+	z-index: 50;
+	padding: 4vh;
+}
+
+.content-text {
+  padding: 10px 15px;
+  margin: 0;
+  color: #fff;
+	z-index: 50;
 }
 
 /*************************************
 Facebook Tile
 **************************************/
+
 .facebook-exp {
 	background-color: #38569E;
+	border: 5px solid lightblue;
 }
 
 .facebook-exp .logo {
@@ -236,8 +248,10 @@ Facebook Tile
 /*************************************
 Amazon Tile
 **************************************/
+
 .amazon-exp {
 	background-color: #FF9A00;
+	border: 5px solid #FFE0B3;
 }
 
 .amazon-exp .logo {
@@ -276,8 +290,13 @@ Amazon Tile
 /*************************************
 JPL Tile
 **************************************/
+
 .jpl-exp {
 	background-color: #000000;
+	border: 5px solid #A6A6A6;
+}
+
+.jpl-desc {
 }
 
 .jpl-exp .logo {
@@ -298,7 +317,10 @@ JPL Tile
 	color: white;
 }
 
-.jpl-exp .date-item,
+.jpl-exp .date-item {
+	background: #A6A6A6;
+}
+
 .jpl-exp .date-item::before {
 	background: #A6A6A6;
 }
@@ -338,9 +360,6 @@ JPL Tile
 Work Timeline
 **************************************/
 .work-timeline {
-	position: absolute;
-	right: 0;
-	top: 37%;
 	width: 90%;
 	margin-top: auto;
 	margin-bottom: auto;
@@ -348,6 +367,7 @@ Work Timeline
 }
 
 .date-item {
+	position: relative;
 	width: 2.5vw;
 	height: 2.5vw;
 	text-align: center;
@@ -356,7 +376,6 @@ Work Timeline
 	margin: 0 0.325vw;
 	display: inline-block;
 	color: white;
-	position: relative;
 	transition: all 0.2s ease-in-out;
 }
 
@@ -369,13 +388,12 @@ Work Timeline
 }
 
 .date-item::before{
-	content: '';
 	position: absolute;
+	content: '';
 	top: 1.25vw;
 	left: -1.25vw;
 	width: 1.25vw;
 	height: 3.2px;
-	z-index: -1;
 }
 
 
@@ -383,9 +401,6 @@ Work Timeline
 	display: none;
 }
 
-.active {
-	z-index: 100;
-}
 
 .year {
 	border-radius: 0%;
@@ -678,6 +693,7 @@ Work Timeline
 	-webkit-overflow-scrolling: touch;
 	height: 75%;
 	width: 90%;
+	margin: auto;
 }
 
 .stage {
@@ -685,6 +701,12 @@ Work Timeline
 	padding: 0;
 	width: 3000px;
 	height: 100%;
+}
+
+.wrapper, .wrapper .stage {
+    transform:rotateX(180deg);
+    -ms-transform:rotateX(180deg); /* IE 9 */
+    -webkit-transform:rotateX(180deg); /* Safari and Chrome */
 }
 
 /*************************************
@@ -947,3 +969,4 @@ Media Queries
 		transform: rotateX(90deg) translateY(16vh);
 	}
 }
+
