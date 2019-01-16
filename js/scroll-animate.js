@@ -2,7 +2,7 @@ var scrollAnimate = function() {
 	var elems;
 	var windowHeight;
 	function init() {
-		elems = document.querySelectorAll('.hidden');
+		elems = document.querySelectorAll('.hidden, .slide-in-element');
 		windowHeight = window.innerHeight;
 		addEventHandlers();
 		checkPosition();
@@ -16,6 +16,7 @@ var scrollAnimate = function() {
 			var positionFromTop = elems[i].getBoundingClientRect().top;
 			if (positionFromTop - windowHeight <= 0) {
 				elems[i].className = elems[i].className.replace('hidden', 'fade-in-element');
+				elems[i].className = elems[i].className.replace('slide-in-element', 'slide-in-execute');
 			}
 		}
 	}

@@ -15,11 +15,6 @@
 	z-index: -1000;
 }
 
-@keyframes fade-in {
-	from { opacity: 0}
-	to	{ opacity: 1}
-}
-
 #loading-screen {
 	position: relative;
 	height: 100vh;
@@ -729,8 +724,8 @@ Build the scene and rotate on hover
 	-webkit-perspective: 1000px;
 	-moz-perspective: 1000px;
 	perspective: 1000px;
-	margin-left: 100px;
-	margin-right: 200px;
+	margin-left: 20vh;
+	margin-right: 40vh;
 	margin-top: 10vh;
 }
 
@@ -840,6 +835,7 @@ Movie information
 }
 
 .info p {
+	font-size: 2vh;
 	padding: 1.2em 1.4em;
 	margin: 2px 0 0;
 	font-weight: 500;
@@ -985,10 +981,32 @@ Media Queries
     -webkit-animation: popout 1s ease;
 }
 @keyframes popout {
-    from{transform:scale(0.6)}
+    from{transform:scale(0.9)}
     to{transform:scale(1)}
 }
 @-webkit-keyframes popout {
-    from{-webkit-transform:scale(0)}
+    from{-webkit-transform:scale(0.9)}
     to{-webkit-transform:scale(1)}
+}
+
+@keyframes fade-in {
+	from { opacity: 0}
+	to	{ opacity: 1}
+}
+@-webkit-keyframes fade-in {
+	from { -webkit-opacity: 0}
+	to	{ -webkit-opacity: 1}
+}
+
+@keyframes slide-in {
+	0% { transform: translateX(-100%); }
+	100% { transform: translateX(0%); }
+}
+
+.slide-in-element {
+}
+
+.slide-in-execute {
+	animation: slide-in 5s forwards;
+	-webkit-animation: slide-in 0.5s forwards;
 }

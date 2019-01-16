@@ -54,7 +54,7 @@
 		<div class="nav-button">
 			<a style="text-decoration: none;" href="#work" class="next">&Rang;</a>
 		</div>
-	<div class="school-container hidden">
+	<div class="school-container">
 		<h1>Background</h1>
 		<div class="berkeley-experience">
 			<p>I am currently a third year undergraduate studying Electrical Engineering and Computer Sciences at UC Berkeley. My interests include software engineering, system reliability & scalability, and cloud computing. Hover or tap on the blocks below to learn about how I spend my time as a student at Cal!</p>
@@ -62,7 +62,7 @@
 		<div class="wrapper">
 			<ul class="stage clearfix row">
 
-				<li class="club-block csm">
+				<li class="club-block csm slide-in-element">
 					<div class="club" onclick="return true">
 						<div class="club-logo"></div>
 						<div class="info">
@@ -76,7 +76,7 @@
 					</div>
 				</li>
 
-				<li class="club-block anova">
+				<li class="club-block anova slide-in-element">
 					<div class="club" onclick="return true">
 						<div class="club-logo"></div>
 						<div class="info">
@@ -90,7 +90,7 @@
 					</div>
 				</li>
 
-				<li class="club-block tutor">
+				<li class="club-block tutor slide-in-element">
 					<div class="club" onclick="return true">
 						<div class="club-logo"></div>
 						<div class="info">
@@ -111,95 +111,97 @@
 <!--- About -->
 <section id="work">
 	<div class="work-container">
-		<div class="work hidden">
+		<div class="work">
 			<h1>Experience</h1>
 		</div>
-		<div class="experience-wrapper set">
-			<div class="row experience hidden facebook-exp label-wrapper">
-				<div class="logo"><img src="img/facebook.png" class="img-responsive"></div>
-				<div class="work-place"><p>Facebook</p></div>
-				<div class="work-position"><p>Production Engineering Intern</p></div>
-			</div>
-  	  <div class="content facebook-desc">
-				<div class="content-desc">
-					<div class="work-timeline">
-						<ul>
-							<li class="date-item year"><p>2019</p></li>
-							<li class="date-item start"><p>Jan</p></li>
-							<li class="date-item"><p>Feb</p></li>
-							<li class="date-item"><p>Mar</p></li>
-							<li class="date-item"><p>Apr</p></li>
-							<li class="date-item active start-date"><p>May</p></li>
-							<li class="date-item active"><p>Jun</p></li>
-							<li class="date-item active"><p>Jul</p></li>
-							<li class="date-item active"><p>Aug</p></li>
-							<li class="date-item"><p>Sep</p></li>
-							<li class="date-item"><p>Oct</p></li>
-							<li class="date-item"><p>Nov</p></li>
-							<li class="date-item"><p>Dec</p></li>
-						</ul>
-					</div>
-					<p class="content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-  	  	</div>
-  	  </div>
-		</div>
-		<div class="experience-wrapper set">
-			<div class="row experience hidden amazon-exp label-wrapper">
-				<div class="logo"><img src="img/amazon4.jpg" class="img-responsive"></div>
-				<div class="work-place"><p>Amazon</p></div>
-				<div class="work-position"><p>Software Development Engineering Intern</p></div>
-			</div>
-  	  <div class="content amazon-desc">
-				<div class="content-desc">
-					<div class="work-timeline">
-						<ul>
-							<li class="date-item year"><p>2018</p></li>
-							<li class="date-item start"><p>Jan</p></li>
-							<li class="date-item"><p>Feb</p></li>
-							<li class="date-item"><p>Mar</p></li>
-							<li class="date-item"><p>Apr</p></li>
-							<li class="date-item active start-date"><p>May</p></li>
-							<li class="date-item active"><p>Jun</p></li>
-							<li class="date-item active"><p>Jul</p></li>
-							<li class="date-item active"><p>Aug</p></li>
-							<li class="date-item"><p>Sep</p></li>
-							<li class="date-item"><p>Oct</p></li>
-							<li class="date-item"><p>Nov</p></li>
-							<li class="date-item"><p>Dec</p></li>
-						</ul>
-					</div>
-					<p class="content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-  	  	</div>
-  	  </div>
-		</div>
-		<div class="experience-wrapper set">
-			<div class="row experience hidden jpl-exp label-wrapper">
-				<div class="logo"><img src="img/nasa2.png" class="img-responsive"></div>
-				<div class="work-place"><p>NASA-JPL</p></div>
-				<div class="work-position"><p>Undergraduate Engineering Intern</p></div>
-			</div>
-  	  <div class="content jpl-desc">
-				<div class="content-desc">
-					<div class="work-timeline">
-						<ul>
-							<li class="date-item year"><p>2017</p></li>
-							<li class="date-item start"><p>Jan</p></li>
-							<li class="date-item"><p>Feb</p></li>
-							<li class="date-item"><p>Mar</p></li>
-							<li class="date-item"><p>Apr</p></li>
-							<li class="date-item active start-date"><p>May</p></li>
-							<li class="date-item active"><p>Jun</p></li>
-							<li class="date-item active"><p>Jul</p></li>
-							<li class="date-item active"><p>Aug</p></li>
-							<li class="date-item"><p>Sep</p></li>
-							<li class="date-item"><p>Oct</p></li>
-							<li class="date-item"><p>Nov</p></li>
-							<li class="date-item"><p>Dec</p></li>
-						</ul>
-					</div>
-					<p class="content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+		<div class="gamma-wrapper">
+			<div class="experience-wrapper set hidden">
+				<div class="row experience slide-in-element facebook-exp label-wrapper">
+					<div class="logo"><img src="img/facebook.png" class="img-responsive"></div>
+					<div class="work-place"><p>Facebook</p></div>
+					<div class="work-position"><p>Production Engineering Intern</p></div>
 				</div>
-  	  </div>
+  		  <div class="content facebook-desc">
+					<div class="content-desc">
+						<div class="work-timeline">
+							<ul>
+								<li class="date-item year"><p>2019</p></li>
+								<li class="date-item start"><p>Jan</p></li>
+								<li class="date-item"><p>Feb</p></li>
+								<li class="date-item"><p>Mar</p></li>
+								<li class="date-item"><p>Apr</p></li>
+								<li class="date-item active start-date"><p>May</p></li>
+								<li class="date-item active"><p>Jun</p></li>
+								<li class="date-item active"><p>Jul</p></li>
+								<li class="date-item active"><p>Aug</p></li>
+								<li class="date-item"><p>Sep</p></li>
+								<li class="date-item"><p>Oct</p></li>
+								<li class="date-item"><p>Nov</p></li>
+								<li class="date-item"><p>Dec</p></li>
+							</ul>
+						</div>
+						<p class="content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+  		  	</div>
+  		  </div>
+			</div>
+			<div class="experience-wrapper set hidden">
+				<div class="row experience slide-in-element amazon-exp label-wrapper">
+					<div class="logo"><img src="img/amazon4.jpg" class="img-responsive"></div>
+					<div class="work-place"><p>Amazon</p></div>
+					<div class="work-position"><p>Software Development Engineering Intern</p></div>
+				</div>
+  		  <div class="content amazon-desc">
+					<div class="content-desc">
+						<div class="work-timeline">
+							<ul>
+								<li class="date-item year"><p>2018</p></li>
+								<li class="date-item start"><p>Jan</p></li>
+								<li class="date-item"><p>Feb</p></li>
+								<li class="date-item"><p>Mar</p></li>
+								<li class="date-item"><p>Apr</p></li>
+								<li class="date-item active start-date"><p>May</p></li>
+								<li class="date-item active"><p>Jun</p></li>
+								<li class="date-item active"><p>Jul</p></li>
+								<li class="date-item active"><p>Aug</p></li>
+								<li class="date-item"><p>Sep</p></li>
+								<li class="date-item"><p>Oct</p></li>
+								<li class="date-item"><p>Nov</p></li>
+								<li class="date-item"><p>Dec</p></li>
+							</ul>
+						</div>
+						<p class="content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+  		  	</div>
+  		  </div>
+			</div>
+			<div class="experience-wrapper set hidden">
+				<div class="row experience slide-in-element jpl-exp label-wrapper">
+					<div class="logo"><img src="img/nasa2.png" class="img-responsive"></div>
+					<div class="work-place"><p>NASA-JPL</p></div>
+					<div class="work-position"><p>Undergraduate Engineering Intern</p></div>
+				</div>
+  		  <div class="content jpl-desc">
+					<div class="content-desc">
+						<div class="work-timeline">
+							<ul>
+								<li class="date-item year"><p>2017</p></li>
+								<li class="date-item start"><p>Jan</p></li>
+								<li class="date-item"><p>Feb</p></li>
+								<li class="date-item"><p>Mar</p></li>
+								<li class="date-item"><p>Apr</p></li>
+								<li class="date-item active start-date"><p>May</p></li>
+								<li class="date-item active"><p>Jun</p></li>
+								<li class="date-item active"><p>Jul</p></li>
+								<li class="date-item active"><p>Aug</p></li>
+								<li class="date-item"><p>Sep</p></li>
+								<li class="date-item"><p>Oct</p></li>
+								<li class="date-item"><p>Nov</p></li>
+								<li class="date-item"><p>Dec</p></li>
+							</ul>
+						</div>
+						<p class="content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+					</div>
+  		  </div>
+			</div>
 		</div>
 	</div>
 </section>
