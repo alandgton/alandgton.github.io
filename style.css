@@ -451,6 +451,7 @@ Work Timeline
 
 	.amazon-exp .logo img {
 		transform: scale(1.3);
+		margin-top: 10px;
 	}
 
 	.jpl-exp .logo img {
@@ -994,13 +995,17 @@ Media Queries
 	to	{ opacity: 1}
 }
 @-webkit-keyframes fade-in {
-	from { -webkit-opacity: 0}
-	to	{ -webkit-opacity: 1}
+	from { opacity: 0}
+	to	{ opacity: 1}
 }
 
 @keyframes slide-in {
-	0% { transform: translateX(-100%); }
-	100% { transform: translateX(0%); }
+	0% { transform: translateX(-100%) }
+	100% { transform: translateX(0%) }
+}
+@-webkit-keyframes slide-in {
+	0% { -webkit-transform: translateX(-100%) }
+	100% { -webkit-transform: translateX(0%) }
 }
 
 .slide-in-element {
