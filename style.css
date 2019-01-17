@@ -103,7 +103,6 @@
 		height: 100px;
 		position: absolute;
 		transform: translate(-50%, -20%);
-		animation-delay: 3s;
 		border: 5px solid white;
 		z-index: 3;
 	}
@@ -141,14 +140,6 @@
 	height: 3px;
 	width: 170px;
 	margin: 20px auto 5px;
-}
-
-.hidden {
-	opacity: 0;
-}
-
-.fade-in-element {
-	animation: fade-in 2s ease-in;
 }
 
 #work {
@@ -964,8 +955,12 @@ Media Queries
 	-webkit-perspective: 1000;
 	-webkit-transform: translate3d(0, 0, 0);
 	will-change: transform;
-    -webkit-animation: popout 1s ease;
-    animation: popout 1s ease;
+	-webkit-animation-name: popout;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-timing-function: ease-out;
+	animation-name: popout;
+	animation-duration: 1s;
+	animation-timing-function: ease-out;
 }
 @-webkit-keyframes popout {
     from {
@@ -988,6 +983,19 @@ Media Queries
 		}
 }
 
+.hidden {
+	opacity: 0;
+}
+
+.fade-in-element {
+	-webkit-animation-name: fade-in;
+	-webkit-animation-duration: 5s;
+	-webkit-animation-timing-function: ease-in;
+	animation-name: fade-in;
+	animation-duration: 3s;
+	animation-timing-function: ease-in;
+}
+
 @-webkit-keyframes fade-in {
 	from { opacity: 0 }
 	to	{ opacity: 1 }
@@ -1002,8 +1010,12 @@ Media Queries
 	-webkit-perspective: 1000;
 	-webkit-transform: translate3d(0, 0, 0);
 	will-change: transform;
-	-webkit-animation: slide-in 1s forwards;
-	animation: slide-in 1s forwards;
+	-webkit-animation-name: slide-in;
+	-webkit-animation-duration: 3s;
+	-webkit-animation-timing-function: ease-out;
+	animation-name: slide-in;
+	animation-duration: 3s;
+	animation-timing-function: ease-out;
 }
 
 @-webkit-keyframes slide-in {
@@ -1013,16 +1025,18 @@ Media Queries
 	}
 	100% {
 		-webkit-transform: translateX(0%);
-		transform: translatex(0%);
+		transform: translateX(0%);
 	}
 }
 @keyframes slide-in {
 	0% {
+		opacity: 0;
 		-webkit-transform: translateX(-100%);
 		transform: translateX(-100%);
 	}
 	100% {
+		opacity: 1;
 		-webkit-transform: translateX(0%);
-		transform: translatex(0%);
+		transform: translateX(0%);
 	}
 }
