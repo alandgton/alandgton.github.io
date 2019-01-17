@@ -377,7 +377,6 @@ Work Timeline
 	margin: 0 0.625vw;
 	display: inline-block;
 	color: white;
-	transition: all 0.2s ease-in-out;
 	z-index: 70;
 }
 
@@ -1039,4 +1038,8 @@ Media Queries
 		-webkit-transform: translateX(0%);
 		transform: translateX(0%);
 	}
+}
+
+.gamma-wrapper {
+	overflow-x: visible;
 }
