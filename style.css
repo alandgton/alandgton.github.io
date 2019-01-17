@@ -178,8 +178,8 @@
 	/* change */
 	/* height: 80%; */
 	/*max-width: 100%!important;*/
-	max-width: 10%;
-	max-height: 10%;
+	max-width: 13%;
+	max-height: 13%;
 }
 
 .experience {
@@ -221,8 +221,8 @@ Facebook Tile
 
 .facebook-exp .logo {
 	position: absolute;
-	left: 10px;
 	top: 50%;
+	left: 30px;
 	transform: translateY(-50%);
 }
 
@@ -268,7 +268,6 @@ Amazon Tile
 	left: 30px;
 	top: 50%;
 	transform: translateY(-50%);
-	color: white;
 }
 
 .amazon-exp .work-position {
@@ -313,7 +312,6 @@ JPL Tile
 	left: 30px;
 	top: 50%;
 	transform: translateY(-50%);
-	color: white;
 }
 
 .jpl-exp .work-position {
@@ -959,37 +957,37 @@ Media Queries
 }
 
 .popout {
-    animation: popout 1s ease;
     -webkit-animation: popout 1s ease;
-}
-@keyframes popout {
-    from { transform: scale(0.9) }
-    to { transform: scale(1) }
+    animation: popout 1s ease;
 }
 @-webkit-keyframes popout {
     from { -webkit-transform: scale(0.9) }
     to { -webkit-transform: scale(1) }
 }
-
-@keyframes fade-in {
-	from { opacity: 0}
-	to	{ opacity: 1}
+@keyframes popout {
+    from { transform: scale(0.9) }
+    to { transform: scale(1) }
 }
+
 @-webkit-keyframes fade-in {
 	from { opacity: 0 }
 	to	{ opacity: 1 }
 }
-
-@keyframes slide-in {
-	0% { transform: translateX(-100%) }
-	100% { transform: translateX(0%) }
+@keyframes fade-in {
+	from { opacity: 0}
+	to	{ opacity: 1}
 }
+
+.slide-in-execute {
+	-webkit-animation: slide-in 1s forwards;
+	animation: slide-in 1s forwards;
+}
+
 @-webkit-keyframes slide-in {
 	0% { -webkit-transform: translateX(-100%) }
 	100% { -webkit-transform: translateX(0%) }
 }
-
-.slide-in-execute {
-	animation: slide-in 1s forwards;
-	-webkit-animation: slide-in 1s forwards;
+@keyframes slide-in {
+	0% { transform: translateX(-100%) }
+	100% { transform: translateX(0%) }
 }
