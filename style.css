@@ -501,18 +501,6 @@ Work Timeline
 		width: 90%;
 	}
 	
-	/*.logo img {
-		width: 20%;
-		height: auto;
-	}
-
-	.facebook-exp .logo img {
-		width: 10%;
-		margin-left: 20px;
-		height: auto;
-		transform: scale(1.5);
-	}*/
-	
 	.work-position p {
 		font-size: 3vh;
 	}
@@ -592,14 +580,6 @@ Work Timeline
 		color: white;
 		margin-bottom: -30px;
 	}
-
-	/*.logo img {
-		width: 20%;
-	}
-
-	.facebook-exp .logo img {
-		transform: scale(1.5);
-	}*/
 
 	.date-item {
 		width: 3vw;
