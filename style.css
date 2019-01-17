@@ -148,7 +148,7 @@
 }
 
 .fade-in-element {
-	animation: fade-in 2s;
+	animation: fade-in 2s ease-in;
 }
 
 #work {
@@ -164,7 +164,11 @@
 	display: block;
 	height: 3px;
 	width: 170px;
-	margin: 10px auto 5px;
+	margin: 10px auto 10px;
+}
+
+.work-experience {
+	margin-bottom: 30px;
 }
 
 .experience-wrapper {
@@ -990,6 +994,10 @@ Media Queries
 }
 
 .slide-in-execute {
+	-webkit-backface-visibility: hidden;
+	-webkit-perspective: 1000;
+	-webkit-transform: translate3d(0, 0, 0);
+	will-change: transform;
 	-webkit-animation: slide-in 1s forwards;
 	animation: slide-in 1s forwards;
 }
