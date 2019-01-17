@@ -960,12 +960,24 @@ Media Queries
     animation: popout 1s ease;
 }
 @-webkit-keyframes popout {
-    from { -webkit-transform: scale(0.9) }
-    to { -webkit-transform: scale(1) }
+    from {
+			-webkit-transform: scale(0.9);
+			transform: scale(0.9);
+		}
+    to {
+			-webkit-transform: scale(1);
+			transform: scale(1);
+		}
 }
 @keyframes popout {
-    from { transform: scale(0.9) }
-    to { transform: scale(1) }
+    from {
+			-webkit-transform: scale(0.9);
+			transform: scale(0.9);
+		}
+    to {
+			-webkit-transform: scale(1);
+			transform: scale(1);
+		}
 }
 
 @-webkit-keyframes fade-in {
@@ -983,10 +995,22 @@ Media Queries
 }
 
 @-webkit-keyframes slide-in {
-	0% { -webkit-transform: translateX(-100%) }
-	100% { -webkit-transform: translateX(0%) }
+	0% {
+		-webkit-transform: translateX(-100%);
+		transform: translateX(-100%);
+	}
+	100% {
+		-webkit-transform: translateX(0%);
+		transform: translatex(0%);
+	}
 }
 @keyframes slide-in {
-	0% { transform: translateX(-100%) }
-	100% { transform: translateX(0%) }
+	0% {
+		-webkit-transform: translateX(-100%);
+		transform: translateX(-100%);
+	}
+	100% {
+		-webkit-transform: translateX(0%);
+		transform: translatex(0%);
+	}
 }
