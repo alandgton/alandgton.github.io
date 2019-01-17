@@ -990,12 +990,14 @@ Media Queries
 
 .hidden {
 	opacity: 0;
+	will-change: opacity;
 }
 
 .fade-in-element {
 	-webkit-animation-name: fade-in;
 	-webkit-animation-duration: 5s;
 	-webkit-animation-timing-function: ease-in;
+	will-change: opacity;
 	animation-name: fade-in;
 	animation-duration: 3s;
 	animation-timing-function: ease-in;
@@ -1021,10 +1023,10 @@ Media Queries
 	will-change: transform;
 	-webkit-animation-name: slide-in;
 	-webkit-animation-duration: 3s;
-	-webkit-animation-timing-function: ease-out;
+	-webkit-animation-timing-function: ease-in-out;
 	animation-name: slide-in;
 	animation-duration: 3s;
-	animation-timing-function: ease-out;
+	animation-timing-function: ease-in-out;
 }
 
 @-webkit-keyframes slide-in {
