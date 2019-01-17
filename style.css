@@ -7,12 +7,8 @@
 .alpha-wrapper {
 	overflow-x: hidden;
 	overflow-y: scroll;
-}
-
-.beta-wrapper {
 	background-color: black;
 	background-image: linear-gradient(to bottom, black, #cccccc);
-	z-index: -1000;
 }
 
 #loading-screen {
@@ -27,7 +23,6 @@
 	left: 50%;
 	margin-left: -150px;
 	margin-top: -250px;
-	z-index: 5;
 }
 
 .portrait img {
@@ -53,7 +48,6 @@
 	position: absolute;
 	transform: translate(-50%, -10%);
 	border: 8px solid white;
-	z-index: 3;
 }
 
 .portrait-caption p {
@@ -995,11 +989,11 @@ Media Queries
 
 .fade-in-element {
 	-webkit-animation-name: fade-in;
-	-webkit-animation-duration: 5s;
+	-webkit-animation-duration: 1s;
 	-webkit-animation-timing-function: ease-in;
 	will-change: opacity;
 	animation-name: fade-in;
-	animation-duration: 3s;
+	animation-duration: 1s;
 	animation-timing-function: ease-in;
 }
 
@@ -1022,10 +1016,10 @@ Media Queries
 	-webkit-transform: translate3d(0, 0, 0);
 	will-change: transform;
 	-webkit-animation-name: slide-in;
-	-webkit-animation-duration: 3s;
+	-webkit-animation-duration: 1s;
 	-webkit-animation-timing-function: ease-in-out;
 	animation-name: slide-in;
-	animation-duration: 3s;
+	animation-duration: 1s;
 	animation-timing-function: ease-in-out;
 }
 
