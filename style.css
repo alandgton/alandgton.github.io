@@ -117,7 +117,6 @@
 	background-size: cover;*/
 	color: #efefef !important;
 	padding-top: 50px;
-	padding-bottom: 50px;
 	height: 100vh;
 	width: 100vw;
 }
@@ -643,6 +642,9 @@ Work Timeline
 	}
 }
 
+.school-container {
+	height: 100%!important;
+}
 
 .wrapper {
 	/*margin: 0 auto 100px auto;
@@ -681,7 +683,7 @@ Build the scene and rotate on hover
 	perspective: 1000px;
 	margin-left: 20vh;
 	margin-right: 30vh;
-	margin-top: 5vh;
+	margin-top: 10vh;
 }
 
 .club {
@@ -986,10 +988,10 @@ Media Queries
 .slide-in-execute {
 	-webkit-animation-name: slide-in;
 	-webkit-animation-duration: 1s;
-	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-timing-function: linear;
 	animation-name: slide-in;
 	animation-duration: 1s;
-	animation-timing-function: ease-in-out;
+	animation-timing-function: linear;
 }
 
 @-webkit-keyframes slide-in {

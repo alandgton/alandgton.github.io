@@ -232,14 +232,14 @@ $(document).ready(function() {
 	$(".experience-wrapper").on("click", function() {
 		if ($(this).hasClass("active")) {
 			$(this).removeClass("active");
-			$(this).children(".content").slideUp(300);
-			$(this).siblings().slideToggle();
+			$(this).children(".content").slideUp(200);
+			$(this).siblings().slideToggle(600);
 		} else {
-			$(this).siblings().slideToggle();
+			$(this).siblings().slideToggle(600);
 			$(".experience-wrapper").removeClass("active");
 			$(this).addClass("active");
-			$(".content").slideUp(300);
-			$(this).children(".content").slideDown(300);
+			$(".content").slideUp(200);
+			$(this).children(".content").slideDown(200);
 			
 		}
   });
