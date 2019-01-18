@@ -33,7 +33,6 @@
 	border: 8px solid white;
 }
 
-/* Lesson: when top: 50% is not working, create a dummy parent. */
 .portrait-holder {
 	position: absolute;
 	top: 50%;
@@ -49,6 +48,7 @@
 	position: absolute;
 	transform: translate(-50%, -10%);
 	border: 8px solid white;
+	z-index: 2;
 }
 
 .portrait-caption p {
@@ -156,6 +156,10 @@
 	width: 100%;
 	height: 100%;
 	margin: auto;
+	-webkit-backface-visibility: hidden;
+	-webkit-perspective: 1000;
+	-webkit-transform: translateZ(0);
+	will-change: transform;
 }
 
 .gamma-wrapper {
@@ -170,6 +174,10 @@
 	position: relative;
 	margin: auto;
 	height: 150px;
+	-webkit-backface-visibility: hidden;
+	-webkit-perspective: 1000;
+	-webkit-transform: translateZ(0);
+	will-change: transform;
 }
 
 
@@ -187,6 +195,10 @@
 	width: 100%!important;
 	margin: auto!important;
 	height: 100%;
+	-webkit-backface-visibility: hidden;
+	-webkit-perspective: 1000;
+	-webkit-transform: translateZ(0);
+	will-change: transform;
 }
 
 .content{
@@ -986,6 +998,10 @@ Media Queries
 }
 
 .slide-in-execute {
+	-webkit-backface-visibility: hidden;
+	-webkit-perspective: 1000;
+	-webkit-transform: translateZ(0);
+	will-change: transform;
 	-webkit-animation-name: slide-in;
 	-webkit-animation-duration: 0.5s;
 	-webkit-animation-timing-function: linear;
