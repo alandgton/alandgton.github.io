@@ -987,32 +987,32 @@ Media Queries
 
 .slide-in-execute {
 	-webkit-animation-name: slide-in;
-	-webkit-animation-duration: 1s;
+	-webkit-animation-duration: 0.5s;
 	-webkit-animation-timing-function: linear;
 	animation-name: slide-in;
-	animation-duration: 1s;
+	animation-duration: 0.5s;
 	animation-timing-function: linear;
 }
 
 @-webkit-keyframes slide-in {
 	0% {
-		-webkit-transform: translateX(-100%);
+		-webkit-transform: -webkit-translateX(-100%);
 		transform: translateX(-100%);
 	}
 	100% {
-		-webkit-transform: translateX(0%);
+		-webkit-transform: -webkit-translateX(0%);
 		transform: translateX(0%);
 	}
 }
 @keyframes slide-in {
 	0% {
 		opacity: 0;
-		-webkit-transform: translateX(-100%);
+		-webkit-transform: -webkit-translateX(-100%);
 		transform: translateX(-100%);
 	}
 	100% {
 		opacity: 1;
-		-webkit-transform: translateX(0%);
+		-webkit-transform: -webkit-translateX(0%);
 		transform: translateX(0%);
 	}
 }
