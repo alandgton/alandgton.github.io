@@ -138,10 +138,6 @@
 }
 
 #work {
-	-webkit-backface-visibility: hidden;
-	-webkit-perspective: 1000;
-	-webkit-transform: translateZ(0);
-	will-change: transform;
 	height: 100%;
 	padding-top: 20px;
 	padding-bottom: 80px;
@@ -184,9 +180,6 @@
 	margin: auto!important;
 	border-radius: 0px;
 	height: 15%;
-	-webkit-backface-visibility: hidden;
-	-webkit-perspective: 1000;
-	-webkit-transform: translateZ(0);
 	will-change: transform;
 }
 
@@ -939,9 +932,6 @@ Media Queries
 }
 
 .popout {
-	-webkit-backface-visibility: hidden;
-	-webkit-perspective: 1000;
-	-webkit-transform: translate3d(0, 0, 0);
 	-webkit-animation-name: popout;
 	-webkit-animation-duration: 0.4s;
 	-webkit-animation-timing-function: ease-out;
@@ -999,9 +989,6 @@ Media Queries
 }
 
 .slide-in-execute {
-	-webkit-backface-visibility: hidden;
-	-webkit-perspective: 1000;
-	-webkit-transform: translateZ(0);
 	will-change: transform;
 	-webkit-animation-name: slide-in;
 	-webkit-animation-duration: 1s;
@@ -1035,9 +1022,6 @@ Media Queries
 }
 
 .gamma-wrapper {
-	-webkit-backface-visibility: hidden;
-	-webkit-perspective: 1000;
-	-webkit-transform: translateZ(0);
 	will-change: transform;
 	overflow-x: visible;
 }
