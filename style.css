@@ -170,12 +170,9 @@
 .experience-wrapper {
 	position: relative;
 	margin: auto;
-	margin-bottom: 10px;
 	height: 150px;
 }
 
-.set {
-}
 
 .logo img {
 	/* change */
@@ -187,10 +184,10 @@
 
 .experience {
 	position: relative;
-	display: inline-block;
+	display: block;
 	width: 100%!important;
 	margin: auto!important;
-	height: 60%;
+	height: 100%;
 }
 
 .content{
@@ -654,7 +651,7 @@ Work Timeline
 	overflow-y: hidden;
 	overflow-x: scroll;
 	-webkit-overflow-scrolling: touch;
-	height: 75%;
+	height: 100%;
 	width: 90%;
 	margin: auto;
 }
@@ -683,8 +680,8 @@ Build the scene and rotate on hover
 	-moz-perspective: 1000px;
 	perspective: 1000px;
 	margin-left: 20vh;
-	margin-right: 40vh;
-	margin-top: 10vh;
+	margin-right: 30vh;
+	margin-top: 5vh;
 }
 
 .club {
@@ -984,9 +981,6 @@ Media Queries
 @keyframes fade-in {
 	from { opacity: 0}
 	to	{ opacity: 1}
-}
-
-.slide-in-element {
 }
 
 .slide-in-execute {

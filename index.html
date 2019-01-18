@@ -230,18 +230,17 @@
 <script>
 $(document).ready(function() {
 	$(".experience-wrapper").on("click", function() {
-    if ($(this).hasClass("active")) {
-      $(this).removeClass("active");
-      $(this).children(".content").slideUp(300);
-      $(this).children(".content").children(".content-desc").removeClass("popout");
-    } else {
-      $(".experience-wrapper").removeClass("active");
-      $(this).addClass("active");
-      $(".content").slideUp(300);
-      $(".content-desc").removeClass("popout");
-      $(this).children(".content").slideDown(300);
-      $(this).children(".content").children(".content-desc").addClass("popout");
-    }
+		$(this).siblings().slideToggle();
+		if ($(this).hasClass("active")) {
+			$(this).removeClass("active");
+			$(this).children(".content").slideUp(300);
+		} else {
+			$(".experience-wrapper").removeClass("active");
+			$(this).addClass("active");
+			$(".content").slideUp(300);
+			$(this).children(".content").slideDown(300);
+			
+		}
   });
 });
 
