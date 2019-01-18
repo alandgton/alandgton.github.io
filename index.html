@@ -230,11 +230,12 @@
 <script>
 $(document).ready(function() {
 	$(".experience-wrapper").on("click", function() {
-		$(this).siblings().slideToggle();
 		if ($(this).hasClass("active")) {
 			$(this).removeClass("active");
 			$(this).children(".content").slideUp(300);
+			$(this).siblings().slideToggle();
 		} else {
+			$(this).siblings().slideToggle();
 			$(".experience-wrapper").removeClass("active");
 			$(this).addClass("active");
 			$(".content").slideUp(300);
