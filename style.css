@@ -1032,3 +1032,39 @@ Media Queries
 		transform: translateX(0%);
 	}
 }
+
+.slide-up-execute {
+	-webkit-backface-visibility: hidden;
+	-webkit-perspective: 1000;
+	-webkit-transform: translateZ(0);
+	will-change: transform;
+	-webkit-animation-name: slide-up;
+	-webkit-animation-duration: 0.5s;
+	-webkit-animation-timing-function: linear;
+	animation-name: slide-up;
+	animation-duration: 0.5s;
+	animation-timing-function: linear;
+}
+
+@-webkit-keyframes slide-up {
+	0% {
+		-webkit-transform: -webkit-translateY(300px);
+		transform: translateY(300px);
+	}
+	100% {
+		-webkit-transform: -webkit-translateY(0);
+		transform: translateY(0);
+	}
+}
+@keyframes slide-up {
+	0% {
+		opacity: 0;
+		-webkit-transform: -webkit-translateY(300px);
+		transform: translateY(300px);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: -webkit-translateY(0);
+		transform: translateY(0);
+	}
+}
