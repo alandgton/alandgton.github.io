@@ -703,6 +703,7 @@ Build the scene and rotate on hover
 **************************************/
 
 .club-block {
+	-webkit-transform: translateZ(0);
 	width: 46vh;
 	height: 46vh;
 	-webkit-perspective: 1000px;
@@ -872,6 +873,7 @@ Media Queries
 @media screen and (max-width: 600px) {
 
 	.club-block {
+		-webkit-transform: translateZ(0);
 		width: 32vh;
 		height: 32vh;
 		margin-left: 100px;
