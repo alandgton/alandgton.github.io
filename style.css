@@ -60,6 +60,18 @@
 	color: white;
 }
 
+.lol {
+	top: 2%;
+	position: absolute;
+	font-family: 'Coiny', cursive;
+	font-weight: 200;
+	font-size: 30px;
+	left: 50%;
+	transform: translateX(-50%);
+	border: 8px solid white;
+	padding: 10px 40px;
+}
+
 .next {
 	position: absolute;
 	border-radius: 50%;
@@ -69,11 +81,6 @@
 	bottom: 0px;
 	transform: translateX(-50%) rotate(90deg);
 }
-
-.next:hover {
-	color: white;
-}
-
 
 @media screen and (max-width: 600px) {
 	.portrait {
