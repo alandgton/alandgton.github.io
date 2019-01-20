@@ -1,0 +1,27 @@
+body {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	-webkit-animation-name: flash-the-lights;
+	-webkit-animation-duration: 0.5s;
+	-webkit-animation-iteration-count: infinite;
+	animation-name: flash-the-lights;
+	animation-duration: 0.5s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes flash-the-lights {
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+}
+
+@-webkit-keyframes flash-the-lights {
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+}

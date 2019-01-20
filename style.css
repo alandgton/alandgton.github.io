@@ -61,14 +61,14 @@
 }
 
 .lol {
-	top: 2%;
+	top: 1%;
 	position: absolute;
 	font-family: 'Coiny', cursive;
 	font-weight: 200;
-	font-size: 30px;
+	font-size: 15px;
 	left: 50%;
 	transform: translateX(-50%);
-	border: 8px solid white;
+	border: 2px solid white;
 	padding: 10px 40px;
 }
 
