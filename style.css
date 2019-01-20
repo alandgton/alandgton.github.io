@@ -834,28 +834,6 @@ Movie information
 Shadow beneath the 3D object
 **************************************/
 
-.csstransforms3d .club::after {
-	content: '';
-	width: 46vh;
-	height: 46vh;
-	position: absolute;
-	bottom: 0;
-	box-shadow: 0 100px 50px rgba(0,0,0,0.5);
-	-webkit-transform-origin: 100% 100%;
-	-moz-transform-origin: 100% 100%;
-	transform-origin: 100% 100%;
-	-webkit-transform: rotateX(90deg) translateY(23vh);
-	-moz-transform: rotateX(90deg) translateY(23vh);
-	transform: rotateX(90deg) translateY(23vh);
-	-webkit-transition: box-shadow 350ms;
-	-moz-transition: box-shadow 350ms;
-	transition: box-shadow 350ms;
-}
-
-.csstransforms3d .club:hover::after {
-	box-shadow: 70px -5px 50px rgba(0,0,0,0.5);
-}
-
 /*************************************
 Posters and still images
 **************************************/
@@ -884,30 +862,9 @@ Generate "lighting" using box shadows
 	transition: box-shadow 350ms;
 }
 
-.csstransforms3d .club .club-logo {
-	box-shadow: inset 0px 0px 60px rgba(255,255,255,0);
-}
-
-.csstransforms3d .club:hover .club-logo {
-	box-shadow: inset 10px 0px 60px rgba(255,255,255,0.8);
-}
-
-.csstransforms3d .club .info, 
-.csstransforms3d .club .info header {
-	box-shadow: inset -10px 0px 60px rgba(0,0,0,0.5);
-}
-
-.csstransforms3d .club:hover .info, 
-.csstransforms3d .club:hover .info header {
-	box-shadow: inset 0px 0px 60px rgba(0,0,0,0);
-}
 /*************************************
 Fallback
 **************************************/
-.no-csstransforms3d .club .club-logo, 
-.no-csstransforms3d .club .info {
-	position: relative;
-}
 
 /*************************************
 Media Queries
@@ -952,13 +909,6 @@ Media Queries
 		transform: rotateY(90deg) translateZ(16vh);
 	}
 	
-	.csstransforms3d .club::after {
-		width: 32vh;
-		height: 32vh;
-		-webkit-transform: rotateX(90deg) translateY(16vh);
-		-moz-transform: rotateX(90deg) translateY(16vh);
-		transform: rotateX(90deg) translateY(16vh);
-	}
 }
 
 .popout {
