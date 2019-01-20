@@ -268,6 +268,14 @@ Facebook Tile
 	background: lightblue;
 }
 
+#zucc {
+	position: relative;
+	width: 50%;
+	height: auto;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
 /*************************************
 Amazon Tile
 **************************************/
