@@ -97,7 +97,11 @@ body.border-dark .menu-btn > .lines > span{
 	overflow:hidden;
 }
 .menu:hover,
-.menu-btn:hover + .menu{
+.menu-btn:hover + .menu,
+.menu:focus,
+.menu-btn:focus + .menu,
+.menu:active,
+.menu-btn:active + .menu{
 	width:300px;
 }
 .menu > .inner{
@@ -334,14 +338,14 @@ a.btn-custom{
 	border:solid 1px #FFF;
 	border-color:rgba(255,255,255,.8);
 }
-.btn-custom:hover:after{
+.btn-custom:hover:after, .btn-custom:focus:after, .btn-custom:active:after{
 	opacity:1;
 	visibility:visible;
 }
 .btn-custom.btn-color:after{
 	background:#303F9F;
 }
-.btn-custom.btn-color:hover:after{
+.btn-custom.btn-color:hover:after,.btn-custom.btn-color:focus:after,.btn-custom.btn-color:active:after{
 	opacity:.6;
 }
 .btn-custom.btn-color{
