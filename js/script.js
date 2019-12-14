@@ -61,11 +61,11 @@ $(function(){
 				}
 				setTimeout(function(){
 					$('body').removeClass('section-switching up down');			
-				}, 2500);
+				}, 1000);
 				setTimeout(function(){
 					current_sect.removeClass('active');
 					sect.addClass('active');
-				}, 1250);
+				}, 500);
 				if( sect.hasClass('border-d') ){
 					$('body').addClass('border-dark');
 				}else{
@@ -74,25 +74,6 @@ $(function(){
 			}
 		}
 	});
-	
-	
-	/*=========================================================================
-		Testimonials Slider
-	=========================================================================*/
-	$('.testimonials-slider').owlCarousel({
-		items: 2,
-		responsive:{
-			992: {
-				items: 2
-			},
-			0: {
-				items: 1
-			}
-		}
-	});
-	
-	
-	
 	
 	
 	/*=========================================================================
