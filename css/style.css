@@ -275,6 +275,32 @@ body.border-dark .main-content:after{
 	opacity:.8;
 	z-index:-1;
 }
+.party-class:before{
+	-webkit-animation: party .4s infinite;
+	-moz-animation: party .4s infinite;
+	animation: party .4s infinite;
+}
+@keyframes party{
+	0% {background-color:red;}
+	25% {background-color:yellow;}
+	50% {background-color:blue;}
+	75% {background-color:orange;}
+	90% {background-color:green;}
+}
+@-webkit-keyframes party{
+	0% {background-color:red;}
+	25% {background-color:yellow;}
+	50% {background-color:blue;}
+	75% {background-color:orange;}
+	100% {background-color:green;}
+}
+@-moz-keyframes party{
+	0% {background-color:red;}
+	25% {background-color:yellow;}
+	50% {background-color:blue;}
+	75% {background-color:orange;}
+	100% {background-color:green;}
+}
 .intro-text{
 	padding:20px;
 	text-align:center;
@@ -372,18 +398,18 @@ a.btn-custom{
 	opacity:.6;
 }
 .btn-custom.btn-color{
-	color:rgba(0,0,0,.6);
+	color:rgba(0,0,0,.8);
 }
 .btn-custom > h1{
-	color:rgba(0,0,0,.6);
+	color:rgba(0,0,0,.8);
 	font-weight:lighter;
 }
 .btn-custom.btn-color > span:before,
 .btn-custom.btn-color > span:after{
-	background:rgba(0,0,0,.6);
+	background:rgba(0,0,0,.8);
 }
 .btn-custom.btn-color:before{
-	border-color:rgba(0,0,0,.6);
+	border-color:rgba(0,0,0,.8);
 }
 body.section-switching .animation-block{
 	position:absolute;
@@ -561,7 +587,7 @@ body.section-switching.up .animation-block{
 }
 .about-text > p{
 	font-size:14px;
-	color:rgba(0,0,0,.4);
+	color:rgba(0,0,0,.6);
 	line-height:1.8em;
 }
 .about-text{
@@ -588,7 +614,7 @@ body.section-switching.up .animation-block{
 	text-transform:uppercase;
 }
 .info-list > li > span{
-	color:rgba(0,0,0,.4);
+	color:rgba(0,0,0,.6);
 }
 .services-block .section-header{
 	margin-bottom:80px;
@@ -610,7 +636,7 @@ body.section-switching.up .animation-block{
 	-o-transform:rotate(-4deg);
 	transform:rotate(-4deg);
 	/*background:#303F9F;*/
-	background:rgba(0,0,0,0.4);
+	background:rgba(0,0,0,.6);
 	opacity:0;
 	visibility:hidden;
 	z-index:-1;
@@ -629,7 +655,7 @@ body.section-switching.up .animation-block{
 	left:0;
 	right:0;
 	bottom:0;
-	border:solid 1px rgba(0,0,0,.1);
+	border:solid 1px rgba(0,0,0,.8);
 	z-index:2;
 }
 .service > .icon{
@@ -656,8 +682,11 @@ body.section-switching.up .animation-block{
 }
 .service > .content > p{
 	line-height:1.6em;
-	color:rgba(0,0,0,.4);
+	color:rgba(0,0,0,.6);
 	margin:0;
+}
+.service > .content > a{
+	margin-top:40px;
 }
 .skills-block .section-header{
 	margin-bottom:80px;
