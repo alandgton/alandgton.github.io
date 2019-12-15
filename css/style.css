@@ -98,6 +98,7 @@ body.border-dark .menu-btn > .lines > span{
 	transition:width .3s cubic-bezier(.785,.135,.15,.86);
 	overflow:hidden;
 }
+
 .menu:hover,
 .menu-btn:hover + .menu,
 .menu:focus,
@@ -107,6 +108,7 @@ body.border-dark .menu-btn > .lines > span{
 	width:300px;
 }
 body.border-dark .menu-btn:hover > .lines > span,
+body.border-dark .menu-attention:hover > .lines > span,
 body.border-dark .menu-btn:focus > .lines > span,
 body.border-dark .menu-btn:active > .lines > span{
 	/*background:#303F9F;*/
@@ -323,6 +325,10 @@ a.btn-custom{
 	background:transparent;
 	border:none;
 }
+.btn-custom > strong{
+	font-weight:900;
+	letter-spacing:2px;
+}
 .btn-custom:after{
 	content: ' ';
 	position:absolute;
@@ -366,18 +372,18 @@ a.btn-custom{
 	opacity:.6;
 }
 .btn-custom.btn-color{
-	color:#202020;
+	color:rgba(0,0,0,.6);
 }
 .btn-custom > h1{
-	color:rgba(0,0,0,.5);
+	color:rgba(0,0,0,.6);
 	font-weight:lighter;
 }
 .btn-custom.btn-color > span:before,
 .btn-custom.btn-color > span:after{
-	background:rgba(0,0,0,.2);
+	background:rgba(0,0,0,.6);
 }
 .btn-custom.btn-color:before{
-	border-color:rgba(0,0,0,.2);
+	border-color:rgba(0,0,0,.6);
 }
 body.section-switching .animation-block{
 	position:absolute;
