@@ -51,6 +51,7 @@ body{
 .info-list > li > strong,
 .btn-custom,
 .menu-items > li > a,
+.accordion-container,
 h1, h2, h3, h4, h5, h6{
 	font-family: 'Roboto Mono', sans-serif;
 }
@@ -1049,6 +1050,49 @@ body.section-switching.up .animation-block{
 }
 .portfolio-items > li > .inner > .overlay > .view-project:hover{
 	color:#FFF;
+}
+.accordion-container{
+  position: relative;
+  height: auto;
+  margin: 10px;
+	max-width: 700px;
+}
+.set{
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.set > a{
+  display: block;
+  padding: 20px 15px;
+  text-decoration: none;
+  color: #555;
+	font-size:20px;
+  font-weight: 500;
+  border-top: 1px solid #ddd;
+  -webkit-transition:all 0.3s cubic-bezier(.785,.135,.15,.86);
+  -moz-transition:all 0.3s cubic-bezier(.785,.135,.15,.86);
+  transition:all 0.3s cubic-bezier(.785,.135,.15,.86);
+}
+.set:last-child > a{
+  border-bottom: 1px solid #ddd;
+}
+.set > a i{
+  float: right;
+  margin-top: 2px;
+}
+.set > a.active{
+  background-color:rgba(0,0,0,0.3);
+  color: #fff;
+}
+.accordion-content{
+  border-bottom: 1px solid #ddd;
+  display:none;
+}
+.accordion-content p{
+  padding: 10px 15px;
+  margin: 0;
+  color: #333;
 }
 /*== Project Popup ==*/
 .mfp-bg{
