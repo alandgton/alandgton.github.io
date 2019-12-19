@@ -1063,10 +1063,10 @@ body.section-switching.up .animation-block{
   height: auto;
 }
 .set > a{
-  display: block;
-  padding: 20px 15px;
-  text-decoration: none;
-  color: #555;
+  display:block;
+  padding:20px 15px;
+  text-decoration:none;
+  color:#555;
 	font-size:20px;
   font-weight: 500;
   border-top: 1px solid #ddd;

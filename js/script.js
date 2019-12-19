@@ -98,16 +98,16 @@ $(function(){
 	        .siblings(".accordion-content")
 	        .slideUp(200);
 	      $(".set > a i")
-	        .removeClass("ion-android-arrow-up")
-	        .addClass("ion-android-arrow-down");
+	        .removeClass("")
+	        .addClass("");
 	    } else {
 	      $(".set > a i")
-	        .removeClass("ion-android-arrow-up")
-	        .addClass("ion-android-down");
+	        .removeClass("")
+	        .addClass("");
 	      $(this)
 	        .find("i")
-	        .removeClass("ion-android-arrow-down")
-	        .addClass("ion-android-arrow-up");
+	        .removeClass("")
+	        .addClass("");
 	      $(".set > a").removeClass("active");
 	      $(this).addClass("active");
 	      $(".content").slideUp(200);
