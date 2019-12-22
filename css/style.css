@@ -1231,8 +1231,8 @@ body.section-switching.up .animation-block{
 	height:100%;
 	width:100%;
 	z-index:999;
-	-webkit-transition: all .5s ease;
-	-moz-transition: all .5s ease;
+	-webkit-transition: all .1s ease;
+	-moz-transition: all .1s ease;
 	transition: all .1s ease;
 }
 #preloader > .left,
@@ -1244,9 +1244,9 @@ body.section-switching.up .animation-block{
 	background:#FFF;
 	overflow:hidden;
 	z-index:99;
-	-webkit-transition:all .7s .3s ease;
-	-moz-transition:all .7s .3s ease;
-	transition:all .7s .3s ease;
+	-webkit-transition:all .8s .8s ease;
+	-moz-transition:all .8s .8s ease;
+	transition:all .8s .8s ease;
 }
 #preloader > .left{
 	left:0;
@@ -1284,7 +1284,7 @@ body.loaded #preloader .loader{
 	left:0;
 	margin:auto;
 	margin-top:-70px;
-	transition:all .3s ease;
+	transition:all .8s ease;
 	z-index:199;
 	-webkit-animation:loader 1s infinite linear;
 	-moz-animation:loader 1s infinite linear;
