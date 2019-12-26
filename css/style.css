@@ -15,7 +15,6 @@
 	03. Section Styles
 	
 	04. Main Section
-	
 	05. About Section
 	
 	06. Resume Section
@@ -41,6 +40,9 @@ body{
 	overflow:hidden;
 	font-family: Lora, serif;
 	background:rgba(0,0,0,0.2) !important;
+}
+p{
+	font-family: Verdana, Geneva, sans-serif;
 }
 *{
 	font-family: inherit;
@@ -391,8 +393,10 @@ a.btn-custom{
 	opacity:1;
 	visibility:visible;
 }
+/*************************************************************
+ ****************** Gray on White Button *********************
+ *************************************************************/
 .btn-custom.btn-color:after{
-	/*background:#303F9F;*/
 	background:rgba(0,0,0,0.4);
 }
 .btn-custom.btn-color:hover:after,.btn-custom.btn-color:focus:after,.btn-custom.btn-color:active:after{
@@ -412,6 +416,24 @@ a.btn-custom{
 .btn-custom.btn-color:before{
 	border-color:rgba(0,0,0,.8);
 }
+/*************************************************************
+ ************** Cal Button (White on Gold) *******************
+ *************************************************************/
+#cal > .timeline-dropdown > .btn-custom.btn-color:after{
+	background:rgba(0,0,0,0.4);
+}
+#cal > .timeline-dropdown > .btn-custom.btn-color:hover:after,
+#cal > .timeline-dropdown > .btn-custom.btn-color:focus:after,
+#cal > .timeline-dropdown > .btn-custom.btn-color:active:after{
+	opacity:.6;
+}
+#cal > .timeline-dropdown > .btn-custom.btn-color{
+	color:white;
+}
+#cal > .timeline-dropdown > .btn-custom.btn-color:before{
+	border-color:white;
+}
+/*************************************************************/
 body.section-switching .animation-block{
 	position:absolute;
 	left:0;
@@ -668,7 +690,6 @@ body.section-switching.up .animation-block{
 	font-size:54px;
 	line-height:54px;
 	vertical-align:middle;
-	/*color:#303F9F;*/
 	color:rgba(0,0,0,0.8);
 }
 .service > .content{
@@ -893,10 +914,10 @@ body.section-switching.up .animation-block{
 }
 .timeline > li > .timeline-content > h4{
 	margin:0;
-	margin-bottom:5px;
+	margin-bottom:3px;
 }
 .timeline > li > .timeline-content > em{
-	margin-bottom:10px;
+	margin-bottom:15px;
 	display:block;
 	color:rgba(0,0,0,.6);
 }
@@ -914,6 +935,145 @@ body.section-switching.up .animation-block{
 
 .timeline > li > .timeline-content > h1{
 	font-weight:300;
+}
+.timeline-header > i{
+	margin-top:-10px;
+	font-size:20px;
+  float:right;
+}
+/**********************************************************
+ ******************** Tile Coloring ***********************
+ **********************************************************/
+#berk.active{
+	background:#003262;
+	border:solid 1px #003262;
+	color:white;
+}
+#berk.active:before{
+	height:2px;
+	background:#003262;
+}
+#berk.active:after{
+	background:#003262;
+	border:solid 1px #003262;
+}
+#berk > .timeline-dropdown > p > strong{
+	color:white;
+}
+#whs.active{
+	background:#10A4EE;
+	border:solid 1px #10A4EE;
+	color:white;
+}
+#whs.active:before{
+	height:2px;
+	background:#10A4EE;
+}
+#whs.active:after{
+	background:#10A4EE;
+	border:solid 1px #10A4EE;
+}
+#cal.active{
+	background:#C4820F;
+	border:solid 1px #C4820F;
+	color:white;
+}
+#cal.active:before{
+	height:2px;
+	background:#C4820F;
+}
+#cal.active:after{
+	background:#C4820F;
+	border:solid 1px #C4820F;
+}
+#facebook.active{
+	background:#3C5A9A;
+	border:solid 1px #3C5A9A;
+	color:white;
+}
+#facebook.active:before{
+	height:2px;
+	background:#3C5A9A;
+}
+#facebook.active:after{
+	background:#3C5A9A;
+	border:solid 1px #3C5A9A;
+}
+#amazon.active{
+	background:#FF9A00;
+	border:solid 1px #FF9A00;
+	color:white;
+}
+#amazon.active:before{
+	height:2px;
+	background:#FF9A00;
+}
+#amazon.active:after{
+	background:#FF9A00;
+	border:solid 1px #FF9A00;
+}
+#nasa.active{
+	background:#000000;
+	border:solid 1px #000000;
+	color:white;
+}
+#nasa.active:before{
+	height:2px;
+	background:#000000;
+}
+#nasa.active:after{
+	background:#000000;
+	border:solid 1px #000000;
+}
+#anova.active{
+	background:#248487;
+	border:solid 1px #248487;
+	color:white;
+}
+#anova.active:before{
+	height:2px;
+	background:#248487;
+}
+#anova.active:after{
+	background:#248487;
+	border:solid 1px #248487;
+}
+#csm.active{
+	background:#008000;
+	border:solid 1px #008000;
+	color:white;
+}
+#csm.active:before{
+	height:2px;
+	background:#008000;
+}
+#csm.active:after{
+	background:#008000;
+	border:solid 1px #008000;
+}
+#bsa.active{
+	background:#F9E4B7;
+	border:solid 1px #F9E4B7;
+	color:rgba(0,0,0,0.8);
+}
+#bsa.active:before{
+	height:2px;
+	background:#F9E4B7;
+}
+#bsa.active:after{
+	background:#F9E4B7;
+	border:solid 1px #F9E4B7;
+}
+/**********************************************************
+ **********************************************************
+ **********************************************************/
+.timeline-header > h4{
+	margin:0;
+	margin-bottom:3px;
+}
+.timeline-dropdown{
+	margin-top:15px;
+  display:none;
 }
 .semester-tag{
 	color:rgba(0,0,0,.8);
@@ -1057,12 +1217,12 @@ body.section-switching.up .animation-block{
   margin: 10px;
 	max-width: 700px;
 }
-.set{
+.accordion-set{
   position: relative;
   width: 100%;
   height: auto;
 }
-.set > a{
+.accordion-set > a{
   display:block;
   padding:20px 15px;
   text-decoration:none;
@@ -1074,14 +1234,14 @@ body.section-switching.up .animation-block{
   -moz-transition:all 0.3s cubic-bezier(.785,.135,.15,.86);
   transition:all 0.3s cubic-bezier(.785,.135,.15,.86);
 }
-.set:last-child > a{
+.accordion-set:last-child > a{
   border-bottom: 1px solid #ddd;
 }
-.set > a i{
+.accordion-set > a i{
   float: right;
   margin-top: 2px;
 }
-.set > a.active{
+.accordion-set > a.active{
   background-color:rgba(0,0,0,0.3);
   color: #fff;
 }
@@ -1244,9 +1404,9 @@ body.section-switching.up .animation-block{
 	background:#FFF;
 	overflow:hidden;
 	z-index:99;
-	-webkit-transition:all .8s .8s ease;
-	-moz-transition:all .8s .8s ease;
-	transition:all .8s .8s ease;
+	-webkit-transition:all .3s .8s ease;
+	-moz-transition:all .3s .8s ease;
+	transition:all .3s .8s ease;
 }
 #preloader > .left{
 	left:0;
@@ -1284,7 +1444,7 @@ body.loaded #preloader .loader{
 	left:0;
 	margin:auto;
 	margin-top:-70px;
-	transition:all .8s ease;
+	transition:all .6s ease;
 	z-index:199;
 	-webkit-animation:loader 1s infinite linear;
 	-moz-animation:loader 1s infinite linear;

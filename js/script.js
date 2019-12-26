@@ -91,26 +91,26 @@ $(function(){
 		Accordion
 	=========================================================================*/
 	$(document).ready(function() {
-	  $(".set > a").on("click", function() {
+	  $(".accordion-set > a").on("click", function() {
 	    if ($(this).hasClass("active")) {
 	      $(this).removeClass("active");
 	      $(this)
 	        .siblings(".accordion-content")
 	        .slideUp(200);
-	      $(".set > a i")
-	        .removeClass("")
-	        .addClass("");
+	      $(".accordion-set > a i")
+	        .removeClass("fas fa-angle-double-up")
+	        .addClass("fas fa-angle-double-down");
 	    } else {
-	      $(".set > a i")
-	        .removeClass("")
-	        .addClass("");
+	      $(".accordion-set > a i")
+	        .removeClass("fas fa-angle-double-up")
+	        .addClass("fas fa-angle-double-down");
 	      $(this)
 	        .find("i")
-	        .removeClass("")
-	        .addClass("");
-	      $(".set > a").removeClass("active");
+	        .removeClass("fas fa-angle-double-down")
+	        .addClass("fas fa-angle-double-up");
+	      $(".accordion-set > a").removeClass("active");
 	      $(this).addClass("active");
-	      $(".content").slideUp(200);
+	      $(".accordion-content").slideUp(200);
 	      $(this)
 	        .siblings(".accordion-content")
 	        .slideDown(200);
@@ -118,4 +118,31 @@ $(function(){
 	  });
 	});
 
+	$(document).ready(function() {
+	  $(".timeline-content").on("click", function() {
+	    if ($(this).hasClass("active")) {
+	      $(this).removeClass("active");
+	      $(this)
+	        .children(".timeline-dropdown")
+	        .slideUp(200);
+				$(".timeline-header > i")
+	        .removeClass("fas fa-angle-double-up")
+	        .addClass("fas fa-angle-double-down");
+	    } else {
+				$(".timeline-header > i")
+	        .removeClass("fas fa-angle-double-up")
+	        .addClass("fas fa-angle-double-down");
+				$(this)
+	        .find("i")
+	        .removeClass("fas fa-angle-double-down")
+	        .addClass("fas fa-angle-double-up");
+	      $(".timeline-content").removeClass("active");
+	      $(this).addClass("active");
+	      $(".timeline-dropdown").slideUp(200);
+	      $(this)
+	        .children(".timeline-dropdown")
+	        .slideDown(200);
+	    }
+	  });
+	});
 });
