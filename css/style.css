@@ -1088,6 +1088,7 @@ body.section-switching.up .animation-block{
 	margin-top:15px;
   display:none;
 }
+.timeline-dropdown > p > a,
 #opersys > .timeline-dropdown > a{
 	color:white;
 	text-decoration:underline;
