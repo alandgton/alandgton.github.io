@@ -1000,17 +1000,17 @@ body.section-switching.up .animation-block{
 	border:solid 1px #3C5A9A;
 }
 #amazon.active{
-	background:#FF9A00;
-	border:solid 1px #FF9A00;
+	background:#E98000;
+	border:solid 1px #E98000;
 	color:white;
 }
 #amazon.active:before{
 	height:2px;
-	background:#FF9A00;
+	background:#E98000;
 }
 #amazon.active:after{
-	background:#FF9A00;
-	border:solid 1px #FF9A00;
+	background:#E98000;
+	border:solid 1px #E98000;
 }
 #nasa.active{
 	background:#000000;
@@ -1039,30 +1039,43 @@ body.section-switching.up .animation-block{
 	border:solid 1px #248487;
 }
 #csm.active{
-	background:#008000;
-	border:solid 1px #008000;
+	background:olivedrab;
+	border:solid 1px olivedrab;
 	color:white;
 }
 #csm.active:before{
 	height:2px;
-	background:#008000;
+	background:olivedrab;
 }
 #csm.active:after{
-	background:#008000;
-	border:solid 1px #008000;
+	background:olivedrab;
+	border:solid 1px olivedrab;
 }
 #bsa.active{
-	background:#F9E4B7;
-	border:solid 1px #F9E4B7;
-	color:rgba(0,0,0,0.8);
+	background:maroon;
+	border:solid 1px maroon;
+	color:white;
 }
 #bsa.active:before{
 	height:2px;
-	background:#F9E4B7;
+	background:maroon;
 }
 #bsa.active:after{
-	background:#F9E4B7;
-	border:solid 1px #F9E4B7;
+	background:maroon;
+	border:solid 1px maroon;
+}
+#opersys.active{
+	background:dimgray;
+	border:solid 1px dimgray;
+	color:white;
+}
+#opersys.active:before{
+	height:2px;
+	background:dimgray;
+}
+#opersys.active:after{
+	background:dimgray;
+	border:solid 1px dimgray;
 }
 /**********************************************************
  **********************************************************
@@ -1075,24 +1088,25 @@ body.section-switching.up .animation-block{
 	margin-top:15px;
   display:none;
 }
-.semester-tag{
-	color:rgba(0,0,0,.8);
-	color:#B6B6B6;
-	letter-spacing:4px;
-	text-transform:uppercase;
-	text-decoration:none;
-	text-align:center;
-	display:inline-block;
-	*display:inline;
-	*zoom:1;
-	line-height:1em;
-	padding:17px 32px;
-	position:relative;
-	z-index:5;
-	background:transparent;
-	border:none;
+#opersys > .timeline-dropdown > a{
+	color:white;
+	text-decoration:underline;
 }
-
+#semester-tag{
+	color:white;
+	letter-spacing:4px;
+	display:inline-block;
+	background:dimgray;
+	border:solid 1px dimgray;
+}
+#semester-tag.timeline-content:before{
+	height:2px;
+	background:dimgray;
+}
+#semester-tag.timeline-content:after{
+	background:dimgray;
+	border:solid 1px dimgray;
+}
 /*=======================================================
 	Portfolio Section
 =======================================================*/
@@ -1242,8 +1256,8 @@ body.section-switching.up .animation-block{
   margin-top: 2px;
 }
 .accordion-set > a.active{
-  background-color:rgba(0,0,0,0.3);
-  color: #fff;
+  background-color:dimgray;
+  color:white;
 }
 .accordion-content{
   border-bottom: 1px solid #ddd;
@@ -1555,6 +1569,12 @@ body.loaded #preloader .loader{
 	}
 	.intro-text > h1{
 		font-size:62px;
+	}
+	.timeline-header > i{
+		float:none;
+		position:absolute;
+		bottom:3px;
+		left:50%;
 	}
 }
 @media(max-width:550px){

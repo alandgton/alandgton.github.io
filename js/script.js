@@ -98,16 +98,16 @@ $(function(){
 	        .siblings(".accordion-content")
 	        .slideUp(200);
 	      $(".accordion-set > a i")
-	        .removeClass("fas fa-angle-double-up")
-	        .addClass("fas fa-angle-double-down");
+	        .removeClass("fas fa-angle-up")
+	        .addClass("fas fa-angle-down");
 	    } else {
 	      $(".accordion-set > a i")
-	        .removeClass("fas fa-angle-double-up")
-	        .addClass("fas fa-angle-double-down");
+	        .removeClass("fas fa-angle-up")
+	        .addClass("fas fa-angle-down");
 	      $(this)
 	        .find("i")
-	        .removeClass("fas fa-angle-double-down")
-	        .addClass("fas fa-angle-double-up");
+	        .removeClass("fas fa-angle-down")
+	        .addClass("fas fa-angle-up");
 	      $(".accordion-set > a").removeClass("active");
 	      $(this).addClass("active");
 	      $(".accordion-content").slideUp(200);
@@ -126,16 +126,16 @@ $(function(){
 	        .children(".timeline-dropdown")
 	        .slideUp(200);
 				$(".timeline-header > i")
-	        .removeClass("fas fa-angle-double-up")
-	        .addClass("fas fa-angle-double-down");
+	        .removeClass("fas fa-angle-up")
+	        .addClass("fas fa-angle-down");
 	    } else {
 				$(".timeline-header > i")
-	        .removeClass("fas fa-angle-double-up")
-	        .addClass("fas fa-angle-double-down");
+	        .removeClass("fas fa-angle-up")
+	        .addClass("fas fa-angle-down");
 				$(this)
 	        .find("i")
-	        .removeClass("fas fa-angle-double-down")
-	        .addClass("fas fa-angle-double-up");
+	        .removeClass("fas fa-angle-down")
+	        .addClass("fas fa-angle-up");
 	      $(".timeline-content").removeClass("active");
 	      $(this).addClass("active");
 	      $(".timeline-dropdown").slideUp(200);
