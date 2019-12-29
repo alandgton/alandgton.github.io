@@ -53,6 +53,8 @@ p{
 .info-list > li > strong,
 .btn-custom,
 .menu-items > li > a,
+.timeline-data > .date > span,
+.timeline-data > .location > span,
 .accordion-container,
 h1, h2, h3, h4, h5, h6{
 	font-family: 'Roboto Mono', sans-serif;
@@ -912,17 +914,18 @@ body.section-switching.up .animation-block{
 	top:7px;
 	left:-48px;
 }
-.timeline > li > .timeline-content > h4{
+.timeline > li > .timeline-content > .timeline-header > h4{
 	margin:0;
 	margin-bottom:3px;
 }
-.timeline > li > .timeline-content > em{
+.timeline > li > .timeline-content > .timeline-header > em{
 	margin-bottom:15px;
 	display:block;
 	color:rgba(0,0,0,.6);
 }
-.timeline > li > .timeline-content > em > span{
+.timeline > li > .timeline-content > .timeline-header > em > span{
 	margin-right:10px;
+	font-size:16px;
 }
 .timeline > li > .timeline-content > p{
 	margin:0;
@@ -937,9 +940,25 @@ body.section-switching.up .animation-block{
 	font-weight:300;
 }
 .timeline-header > i{
-	margin-top:-10px;
+	margin-top:-5px;
 	font-size:20px;
   float:right;
+}
+.timeline-data{
+	display:block;
+	margin-top:6px;
+}
+.timeline-data > .date,
+.timeline-data > .location{
+	display:inline-block;
+	float:none;
+}
+.timeline-data > .date > i,
+.timeline-data > .location > i{
+	margin-right:3px;
+}
+.timeline-data > .location{
+	margin-left:20px;
 }
 /**********************************************************
  ******************** Tile Coloring ***********************
@@ -1076,6 +1095,17 @@ body.section-switching.up .animation-block{
 #opersys.active:after{
 	background:dimgray;
 	border:solid 1px dimgray;
+}
+#berk.active > .timeline-header > em > span,
+#cal.active > .timeline-header > em > span,
+#facebook.active > .timeline-header > em > span,
+#amazon.active > .timeline-header > em > span,
+#nasa.active > .timeline-header > em > span,
+#anova.active > .timeline-header > em > span,
+#csm.active > .timeline-header > em > span,
+#opersys.active > .timeline-header > em > span,
+#whs.active > .timeline-header > em > span{
+	color:white;
 }
 /**********************************************************
  **********************************************************
@@ -1550,6 +1580,11 @@ body.loaded #preloader .loader{
 	}
 	.contact-info-icons{
 		margin-top:60px;
+	}
+	.timeline-data > .date,
+	.timeline-data > .location{
+		margin-left:0px;
+		width:100%;
 	}
 }
 @media(max-width:768px){
