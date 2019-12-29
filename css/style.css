@@ -1096,15 +1096,7 @@ body.section-switching.up .animation-block{
 	background:dimgray;
 	border:solid 1px dimgray;
 }
-#berk.active > .timeline-header > em > span,
-#cal.active > .timeline-header > em > span,
-#facebook.active > .timeline-header > em > span,
-#amazon.active > .timeline-header > em > span,
-#nasa.active > .timeline-header > em > span,
-#anova.active > .timeline-header > em > span,
-#csm.active > .timeline-header > em > span,
-#opersys.active > .timeline-header > em > span,
-#whs.active > .timeline-header > em > span{
+.active > .timeline-header > em > span{
 	color:white;
 }
 /**********************************************************
@@ -1609,8 +1601,11 @@ body.loaded #preloader .loader{
 	.timeline-header > i{
 		float:none;
 		position:absolute;
-		bottom:3px;
+		bottom:10px;
 		left:50%;
+	}
+	.timeline > li > .timeline-content{
+		padding-bottom:50px;
 	}
 }
 @media(max-width:550px){
