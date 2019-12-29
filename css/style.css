@@ -1578,6 +1578,10 @@ body.loaded #preloader .loader{
 		margin-left:0px;
 		width:100%;
 	}
+	.timeline-data > .date > i{
+		margin-left:2px;
+		margin-right:4px;
+	}
 }
 @media(max-width:768px){
 	.portfolio-items > li{
